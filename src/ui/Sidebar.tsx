@@ -204,7 +204,7 @@ export default function Sidebar() {
     <aside className={`sidebar${collapsed ? ' collapsed' : ''}`}>
       <div className="sidebar-inner">
         <div className="sb-header">
-          <img className="sb-logo" src={`${import.meta.env.BASE_URL}brand/logo-header.webp`} alt="家居生成器 logo" />
+          <img className="sb-logo" src={`${import.meta.env?.BASE_URL ?? '/'}brand/logo-header.webp`} alt="家居生成器 logo" />
           <span className="sb-title">家居生成器</span>
           <span className="sb-axo">Cartoon</span>
           <a

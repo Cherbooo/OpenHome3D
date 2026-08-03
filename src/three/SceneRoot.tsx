@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import * as THREE from 'three'
 import { Canvas, useFrame } from '@react-three/fiber'
+import { useProgress } from '@react-three/drei'
 import { useStore } from '../state/store'
 import { homeAABB } from '../state/home'
 import CameraRig, { ORTHO_ZOOM, PERSP_RADIUS } from './CameraRig'
@@ -8,7 +9,7 @@ import Lights from './Lights'
 import Home from './Home'
 import FurnitureItem from './FurnitureItem'
 import Effects from './Effects'
-import { emitZoomPct, setRootState } from './runtime'
+import { emitSceneReady, emitZoomPct, setRootState } from './runtime'
 
 /** Scratch vector for the perspective zoom reference point (home AABB center). */
 const VIEW_TARGET = new THREE.Vector3(0, 0.8, 0)
@@ -28,6 +29,35 @@ function ZoomProbe() {
       : (PERSP_RADIUS / Math.max(0.001, camera.position.distanceTo(VIEW_TARGET))) * 100
     emitZoomPct(Math.round(pct))
   })
+  return null
+}
+
+/**
+ * Emits scene-ready once GLB assets have finished loading and a few frames
+ * have rendered at the settled canvas size (the loading veil lifts on it).
+ * Guards: empty scene (no loaders → progress never reaches 100) and a hard
+ * timeout so users can never get stuck on the veil.
+ */
+function ReadyProbe() {
+  const { active, progress } = useProgress()
+  const frames = useRef(0)
+  const done = useRef(false)
+
+  const finish = () => {
+    if (done.current) return
+    done.current = true
+    emitSceneReady()
+  }
+
+  useFrame(() => {
+    if (done.current) return
+    frames.current += 1
+    if ((!active && progress >= 100 && frames.current >= 5) || frames.current >= 90) finish()
+  })
+  useEffect(() => {
+    const t = setTimeout(finish, 4000)
+    return () => clearTimeout(t)
+  }, [])
   return null
 }
 
@@ -143,6 +173,7 @@ export default function SceneRoot() {
         ))}
       <Effects />
       <ZoomProbe />
+      <ReadyProbe />
     </Canvas>
   )
 }

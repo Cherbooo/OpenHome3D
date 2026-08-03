@@ -2,7 +2,7 @@ import { create } from 'zustand'
 import type { Brand } from '../models/registry'
 
 /** Which modal is currently on top. `swap`/`add` = model browser, `upload` nests above it. */
-export type ActiveModal = { kind: 'swap' | 'add' } | { kind: 'upload' }
+export type ActiveModal = { kind: 'swap' | 'add' } | { kind: 'upload' } | { kind: 'ai' }
 
 export interface Toast {
   id: number
@@ -40,7 +40,8 @@ export const useUI = create<UIState>()((set, get) => ({
   activeModal: null,
   returnTo: null,
   forcedBrand: null,
-  collapsed: false,
+  // phones start with the sidebar drawer closed (it overlays the canvas there)
+  collapsed: typeof window !== 'undefined' && window.innerWidth <= 720,
   sectionOpen: {},
   toasts: [],
 

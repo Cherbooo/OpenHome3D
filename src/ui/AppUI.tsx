@@ -5,6 +5,7 @@ import TopBar from './TopBar'
 import StatusBar from './StatusBar'
 import Toasts from './Toasts'
 import Modals from './Modals'
+import LoadingVeil from './LoadingVeil'
 
 /**
  * Full UI overlay: fixed sidebar + absolutely positioned chrome over the
@@ -44,6 +45,7 @@ export default function AppUI() {
       </div>
       <Toasts />
       <Modals />
+      <LoadingVeil />
     </>
   )
 }

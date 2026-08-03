@@ -393,8 +393,9 @@ const GLB_MODELS: ModelDef[] = (manifest as ManifestEntry[]).map((e) => {
     type: e.type,
     kind: 'glb' as const,
     // BASE_URL prefix keeps asset URLs working when deployed under a subpath
-    // (GitHub Pages project sites live at /<repo>/)
-    file: `${import.meta.env.BASE_URL}${e.file.replace(/^\//, '')}`,
+    // (GitHub Pages project sites live at /<repo>/); import.meta.env is a Vite
+    // injection, so fall back to '/' under plain node (tsx smoke tests)
+    file: `${import.meta.env?.BASE_URL ?? '/'}${e.file.replace(/^\//, '')}`,
     // manifest carries real-world sizes (size-rules.mjs); estimates are fallback
     footprint: e.footprint ?? FOOTPRINT_OVERRIDES[id] ?? TYPE_FOOTPRINTS[e.type],
     height: e.height,

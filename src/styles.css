@@ -1219,6 +1219,43 @@ textarea.input:focus,
   margin-bottom: 8px;
 }
 
+/* ------------------------------ loading veil ------------------------------- */
+
+.loading-veil {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: var(--paper);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.loading-veil.done {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loading-veil img {
+  width: 120px;
+  height: auto;
+  background: #fff;
+  border: 2px solid var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.loading-tag {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
 /* ------------------------------ scrollbars --------------------------------- */
 
 /* sidebar scrolls without a visible bar (the chunky NB bar looked bad here) */
@@ -1240,4 +1277,118 @@ textarea.input:focus,
   background: #fff;
   border-radius: 0;
   border: 2px solid var(--ink);
+}
+
+
+/* ------------------------------ mobile (≤720px) -----------------------------
+   Sidebar becomes an overlay drawer (closed by default — see uiStore),
+   canvas/overlay go full-width, chrome compacts, modals go near-fullscreen.
+--------------------------------------------------------------------------- */
+
+@media (max-width: 720px) {
+  .app-canvas,
+  body.sidebar-collapsed .app-canvas {
+    left: 0;
+  }
+
+  .ui-overlay,
+  .ui-overlay.collapsed {
+    left: 0;
+  }
+
+  /* drawer floats above the canvas when open (sidebar z 30 > overlay z 20) */
+  .sidebar {
+    box-shadow: 10px 0 30px rgba(26, 26, 26, 0.28);
+  }
+
+  /* drawer handle sits lower so it never fights the top bar */
+  .edge-toggle {
+    top: auto;
+    bottom: 76px;
+    transform: none;
+    width: 22px;
+    height: 44px;
+  }
+
+  /* top bar: compact + horizontally scrollable as a last resort */
+  .topbar {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+  }
+
+  .cam-bar {
+    gap: 2px;
+    padding: 2px 3px;
+    max-width: calc(100vw - 16px);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .cam-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cam-bar .icon-btn {
+    width: 22px;
+    height: 22px;
+  }
+
+  .cam-bar .icon-btn svg {
+    width: 11px;
+    height: 11px;
+  }
+
+  .cam-btn {
+    padding: 4px 6px;
+    font-size: 9px;
+  }
+
+  .cam-bar .cbx {
+    white-space: nowrap;
+  }
+
+  .cam-sep {
+    margin: 0 2px;
+  }
+
+  /* status bar: compact, hint text dropped */
+  .statusbar {
+    bottom: 8px;
+    gap: 6px;
+    padding: 0 8px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .status-hint {
+    display: none;
+  }
+
+  .status-info {
+    font-size: 8px;
+  }
+
+  .sel-pill {
+    max-width: calc(100vw - 16px);
+  }
+
+  /* display popover anchors to the viewport right edge */
+  .display-pop {
+    position: fixed;
+    top: 46px;
+    right: 8px;
+    left: auto;
+  }
+
+  /* modals go near-fullscreen */
+  .modal-panel {
+    width: calc(100vw - 20px);
+    height: calc(100vh - 40px);
+    height: calc(100dvh - 40px);
+  }
+
+  .mb-grid {
+    grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+  }
 }

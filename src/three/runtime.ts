@@ -42,6 +42,32 @@ export function emitZoomPct(pct: number): void {
 }
 
 // ---------------------------------------------------------------------------
+// Scene-ready signal — SceneRoot emits once after assets are loaded and a few
+// stable frames have rendered; the loading veil subscribes
+// ---------------------------------------------------------------------------
+
+const readySubs = new Set<() => void>()
+let sceneReady = false
+
+/** Subscribe to the one-time scene-ready signal (fires immediately if already ready). */
+export function subscribeSceneReady(cb: () => void): () => void {
+  if (sceneReady) {
+    cb()
+    return () => {}
+  }
+  readySubs.add(cb)
+  return () => readySubs.delete(cb)
+}
+
+/** Internal: called by SceneRoot's ReadyProbe. */
+export function emitSceneReady(): void {
+  if (sceneReady) return
+  sceneReady = true
+  readySubs.forEach((cb) => cb())
+  readySubs.clear()
+}
+
+// ---------------------------------------------------------------------------
 // Screenshot — SceneRoot registers the live root state on creation
 // ---------------------------------------------------------------------------
 

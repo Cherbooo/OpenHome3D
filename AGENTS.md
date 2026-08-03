@@ -17,7 +17,8 @@ OpenHome3D 是「家居生成器 Cartoon」的开源版:**仅单间**、**彩色
 
 - **状态**:`src/state/store.ts`(zustand + persist `openhome3d` **v1**)。**单间约束**:`home.rooms` 恒为 1(HomeDef 包装保留,布局引擎/墙体推导/门洞避让与多房间版共用零改动);`FurnitureInstance.roomId` 保留但恒为 rooms[0].id,`position` 是房间局部坐标。dev 下暴露 `window.__store`、`window.__three` 供脚本驱动
 - **模型注册表**:`src/models/registry.ts`。`ModelDef{id, name, brand, type, kind: parametric|glb|upload, file?, footprint, height?, mount?, params?}`;GLB 的 id 带 `kenney:`/`kaykit:` 前缀,footprint/height/mount 来自 manifest(size-rules),不要再写类型级估值
-- **3D ↔ UI 总线**:`src/three/runtime.ts` — `requestView/subscribeView`、`subscribeZoomPct`、`captureScreenshot()`、`captureFittedScreenshot(ratio?)`、`MODEL_BLOB_KEY`。UI 不反向 import three 场景组件,只走这里
+- **3D ↔ UI 总线**:`src/three/runtime.ts` — `requestView/subscribeView`、`subscribeZoomPct`、`captureScreenshot()`、`captureFittedScreenshot(ratio?)`、`MODEL_BLOB_KEY`、`subscribeSceneReady/emitSceneReady`(场景就绪一次性信号)。UI 不反向 import three 场景组件,只走这里
+- **加载遮罩**:`SceneRoot` 的 `ReadyProbe` 在 GLB 资产加载完 + 稳定渲染数帧后 emit 就绪(90 帧/4s 双兜底),`src/ui/LoadingVeil.tsx` 全屏品牌加载屏淡出。**首次渲染不稳定(画布尺寸未稳定/模型未加载),绝不能让裸画面直接露出**
 - **IndexedDB 键**:`model:upload:<uuid>`(上传 GLB Blob)
 - **布局确定性**:`generateLayout` 只依赖 `{roomType, seed, salt, width, depth, extras, doors?}`;seed 由 store 拼成 `${seed}@${room.id}`,`salt` 在 `RoomDef` 上(重排计数);引擎产物 id `f1…` 由 store 加 `${roomId}:` 前缀,用户操作产生的 id 用 `uid()`。门洞避让:store 经 `doorZonesFor(room, home)` 传 `LayoutOpts.doors`,placeWall/placeRun 跳过与门区间外扩 `DOOR_CLEAR=0.35` 相交的候选
 
@@ -46,6 +47,7 @@ OpenHome3D 是「家居生成器 Cartoon」的开源版:**仅单间**、**彩色
 - 弹窗根节点必须带 `data-modal` 属性(3D 层的快捷键据此忽略输入)
 - **侧栏结构**:「方案 Plan」(房型/尺寸/墙高/隔墙/换一换 + 嵌套「门窗 Openings」四面外墙自由加门窗;种子无输入框,状态栏仅展示,脚本仍可用 setSeed)与「家具 Furniture」(装饰密度+添加家具)两个 Section,均可折叠(状态存 uiStore.sectionOpen,仅会话);显示开关(剖切/窗/楼板/门扇/显示家具)在 TopBar「显示 Display」下拉,移动网格在状态栏信息行;「换一换 Shuffle」= `reshuffleFurniture()`(store 另有 `rebuild()` 动作)
 - **侧栏滚动条是故意隐藏的**(`scrollbar-width: none`),不要加回
+- **移动端(≤720px)**:侧栏变覆盖式抽屉(uiStore `collapsed` 默认 true),画布/浮层全宽,顶栏紧凑可横滑,弹窗近全屏;样式集中在 styles.css 末尾的 `@media (max-width: 720px)` 块
 
 ## 测试脚本的注意事项
 
