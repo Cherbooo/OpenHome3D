@@ -1,0 +1,57 @@
+{
+  "name": "openhome3d",
+  "version": "0.1.0",
+  "description": "Open-source cartoon-style (cel-shaded) single-room home designer with a Neo-Brutalism UI — procedural seed-based layouts, 337 CC0 furniture models, model upload, and playful editing.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuyou-dev/OpenHome3D.git"
+  },
+  "keywords": [
+    "home-design",
+    "interior-design",
+    "cel-shading",
+    "toon-rendering",
+    "neo-brutalism",
+    "three.js",
+    "react",
+    "furniture",
+    "procedural-generation"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "smoke": "tsx scripts/smoke-gen.ts",
+    "smoke:ui": "node scripts/smoke-ui.mjs",
+    "audit:ui": "node scripts/audit-ui-overflow.mjs",
+    "assets": "node scripts/fetch-assets.mjs && node scripts/build-manifest.mjs"
+  },
+  "dependencies": {
+    "@react-three/drei": "10.7.7",
+    "@react-three/fiber": "9.7.0",
+    "@react-three/postprocessing": "3.0.4",
+    "idb-keyval": "6.3.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "seedrandom": "3.0.5",
+    "three": "0.185.1",
+    "zustand": "5.0.14"
+  },
+  "devDependencies": {
+    "@gltf-transform/cli": "4.4.2",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.4",
+    "@types/seedrandom": "3.0.8",
+    "@types/three": "0.185.2",
+    "@vitejs/plugin-react": "5.2.0",
+    "puppeteer-core": "^24.43.1",
+    "tsx": "^4.23.1",
+    "typescript": "5.8.3",
+    "vite": "7.3.6"
+  }
+}

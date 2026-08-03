@@ -1,0 +1,8 @@
+node_modules
+dist
+.port
+*.zip
+.asset-cache
+.DS_Store
+.harness
+tmp

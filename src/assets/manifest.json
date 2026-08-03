@@ -1,0 +1,4049 @@
+[
+  {
+    "id": "bathroom-cabinet",
+    "name": "Bathroom Cabinet",
+    "brand": "KENNEY",
+    "type": "STORAGE",
+    "file": "/models/kenney/bathroomCabinet.glb",
+    "footprint": [
+      0.35,
+      0.2
+    ],
+    "height": 0.6
+  },
+  {
+    "id": "bathroom-cabinet-drawer",
+    "name": "Bathroom Cabinet Drawer",
+    "brand": "KENNEY",
+    "type": "STORAGE",
+    "file": "/models/kenney/bathroomCabinetDrawer.glb",
+    "footprint": [
+      0.55,
+      0.41
+    ],
+    "height": 0.6
+  },
+  {
+    "id": "bathroom-mirror",
+    "name": "Bathroom Mirror",
+    "brand": "KENNEY",
+    "type": "BATHROOM",
+    "file": "/models/kenney/bathroomMirror.glb",
+    "footprint": [
+      0.5,
+      0.24
+    ],
+    "height": 0.72
+  },
+  {
+    "id": "bathroom-sink",
+    "name": "Bathroom Sink",
+    "brand": "KENNEY",
+    "type": "BATHROOM",
+    "file": "/models/kenney/bathroomSink.glb",
+    "footprint": [
+      0.58,
+      0.49
+    ],
+    "height": 0.96
+  },
+  {
+    "id": "bathroom-sink-square",
+    "name": "Bathroom Sink Square",
+    "brand": "KENNEY",
+    "type": "BATHROOM",
+    "file": "/models/kenney/bathroomSinkSquare.glb",
+    "footprint": [
+      0.58,
+      0.4
+    ],
+    "height": 0.78
+  },
+  {
+    "id": "bathtub",
+    "name": "Bathtub",
+    "brand": "KENNEY",
+    "type": "BATHROOM",
+    "file": "/models/kenney/bathtub.glb",
+    "footprint": [
+      1.7,
+      0.8
+    ],
+    "height": 0.6
+  },
+  {
+    "id": "bear",
+    "name": "Bear",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/bear.glb",
+    "footprint": [
+      0.35,
+      0.22
+    ],
+    "height": 0.4
+  },
+  {
+    "id": "bed-bunk",
+    "name": "Bed Bunk",
+    "brand": "KENNEY",
+    "type": "BEDS",
+    "file": "/models/kenney/bedBunk.glb",
+    "footprint": [
+      1.04,
+      2
+    ],
+    "height": 1.55
+  },
+  {
+    "id": "bed-double",
+    "name": "Bed Double",
+    "brand": "KENNEY",
+    "type": "BEDS",
+    "file": "/models/kenney/bedDouble.glb",
+    "footprint": [
+      1.74,
+      2.05
+    ],
+    "height": 0.68
+  },
+  {
+    "id": "bed-single",
+    "name": "Bed Single",
+    "brand": "KENNEY",
+    "type": "BEDS",
+    "file": "/models/kenney/bedSingle.glb",
+    "footprint": [
+      1.02,
+      2
+    ],
+    "height": 0.67
+  },
+  {
+    "id": "bench",
+    "name": "Bench",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/bench.glb",
+    "footprint": [
+      1.2,
+      0.6
+    ],
+    "height": 1.41
+  },
+  {
+    "id": "bench-cushion",
+    "name": "Bench Cushion",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/benchCushion.glb",
+    "footprint": [
+      1.2,
+      0.6
+    ],
+    "height": 1.38
+  },
+  {
+    "id": "bench-cushion-low",
+    "name": "Bench Cushion Low",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/benchCushionLow.glb",
+    "footprint": [
+      1,
+      0.52
+    ],
+    "height": 0.48
+  },
+  {
+    "id": "bookcase-closed",
+    "name": "Bookcase Closed",
+    "brand": "KENNEY",
+    "type": "STORAGE",
+    "file": "/models/kenney/bookcaseClosed.glb",
+    "footprint": [
+      0.89,
+      0.56
+    ],
+    "height": 1.9
+  },
+  {
+    "id": "bookcase-closed-doors",
+    "name": "Bookcase Closed Doors",
+    "brand": "KENNEY",
+    "type": "STORAGE",
+    "file": "/models/kenney/bookcaseClosedDoors.glb",
+    "footprint": [
+      0.89,
+      0.56
+    ],
+    "height": 1.9
+  },
+  {
+    "id": "bookcase-closed-wide",
+    "name": "Bookcase Closed Wide",
+    "brand": "KENNEY",
+    "type": "STORAGE",
+    "file": "/models/kenney/bookcaseClosedWide.glb",
+    "footprint": [
+      1.92,
+      0.6
+    ],
+    "height": 1.9
+  },
+  {
+    "id": "bookcase-open",
+    "name": "Bookcase Open",
+    "brand": "KENNEY",
+    "type": "STORAGE",
+    "file": "/models/kenney/bookcaseOpen.glb",
+    "footprint": [
+      0.86,
+      0.54
+    ],
+    "height": 1.9
+  },
+  {
+    "id": "bookcase-open-low",
+    "name": "Bookcase Open Low",
+    "brand": "KENNEY",
+    "type": "STORAGE",
+    "file": "/models/kenney/bookcaseOpenLow.glb",
+    "footprint": [
+      0.9,
+      0.56
+    ],
+    "height": 0.9
+  },
+  {
+    "id": "books",
+    "name": "Books",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/books.glb",
+    "footprint": [
+      0.36,
+      0.23
+    ],
+    "height": 0.25
+  },
+  {
+    "id": "cabinet-bed",
+    "name": "Cabinet Bed",
+    "brand": "KENNEY",
+    "type": "BEDS",
+    "file": "/models/kenney/cabinetBed.glb",
+    "footprint": [
+      0.45,
+      0.36
+    ],
+    "height": 0.39
+  },
+  {
+    "id": "cabinet-bed-drawer",
+    "name": "Cabinet Bed Drawer",
+    "brand": "KENNEY",
+    "type": "BEDS",
+    "file": "/models/kenney/cabinetBedDrawer.glb",
+    "footprint": [
+      0.45,
+      0.37
+    ],
+    "height": 0.45
+  },
+  {
+    "id": "cabinet-bed-drawer-table",
+    "name": "Cabinet Bed Drawer Table",
+    "brand": "KENNEY",
+    "type": "BEDS",
+    "file": "/models/kenney/cabinetBedDrawerTable.glb",
+    "footprint": [
+      0.45,
+      0.37
+    ],
+    "height": 0.45
+  },
+  {
+    "id": "cabinet-television",
+    "name": "Cabinet Television",
+    "brand": "KENNEY",
+    "type": "STORAGE",
+    "file": "/models/kenney/cabinetTelevision.glb",
+    "footprint": [
+      1.4,
+      0.44
+    ],
+    "height": 0.54
+  },
+  {
+    "id": "cabinet-television-doors",
+    "name": "Cabinet Television Doors",
+    "brand": "KENNEY",
+    "type": "STORAGE",
+    "file": "/models/kenney/cabinetTelevisionDoors.glb",
+    "footprint": [
+      1.4,
+      0.45
+    ],
+    "height": 0.54
+  },
+  {
+    "id": "cardboard-box-closed",
+    "name": "Cardboard Box Closed",
+    "brand": "KENNEY",
+    "type": "STORAGE",
+    "file": "/models/kenney/cardboardBoxClosed.glb",
+    "footprint": [
+      0.26,
+      0.26
+    ],
+    "height": 0.35
+  },
+  {
+    "id": "cardboard-box-open",
+    "name": "Cardboard Box Open",
+    "brand": "KENNEY",
+    "type": "STORAGE",
+    "file": "/models/kenney/cardboardBoxOpen.glb",
+    "footprint": [
+      0.46,
+      0.26
+    ],
+    "height": 0.35
+  },
+  {
+    "id": "ceiling-fan",
+    "name": "Ceiling Fan",
+    "brand": "KENNEY",
+    "type": "LIGHTING",
+    "file": "/models/kenney/ceilingFan.glb",
+    "footprint": [
+      1.13,
+      1.3
+    ],
+    "height": 0.33,
+    "mount": "ceiling"
+  },
+  {
+    "id": "chair",
+    "name": "Chair",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/chair.glb",
+    "footprint": [
+      0.38,
+      0.38
+    ],
+    "height": 0.9
+  },
+  {
+    "id": "chair-cushion",
+    "name": "Chair Cushion",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/chairCushion.glb",
+    "footprint": [
+      0.41,
+      0.41
+    ],
+    "height": 0.95
+  },
+  {
+    "id": "chair-desk",
+    "name": "Chair Desk",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/chairDesk.glb",
+    "footprint": [
+      0.52,
+      0.49
+    ],
+    "height": 0.95
+  },
+  {
+    "id": "chair-modern-cushion",
+    "name": "Chair Modern Cushion",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/chairModernCushion.glb",
+    "footprint": [
+      0.39,
+      0.39
+    ],
+    "height": 0.9
+  },
+  {
+    "id": "chair-modern-frame-cushion",
+    "name": "Chair Modern Frame Cushion",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/chairModernFrameCushion.glb",
+    "footprint": [
+      0.39,
+      0.39
+    ],
+    "height": 0.9
+  },
+  {
+    "id": "chair-rounded",
+    "name": "Chair Rounded",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/chairRounded.glb",
+    "footprint": [
+      0.4,
+      0.4
+    ],
+    "height": 0.9
+  },
+  {
+    "id": "coat-rack",
+    "name": "Coat Rack",
+    "brand": "KENNEY",
+    "type": "STORAGE",
+    "file": "/models/kenney/coatRack.glb",
+    "footprint": [
+      0.5,
+      0.15
+    ],
+    "height": 0.31
+  },
+  {
+    "id": "coat-rack-standing",
+    "name": "Coat Rack Standing",
+    "brand": "KENNEY",
+    "type": "STORAGE",
+    "file": "/models/kenney/coatRackStanding.glb",
+    "footprint": [
+      0.62,
+      0.62
+    ],
+    "height": 1.75
+  },
+  {
+    "id": "computer-keyboard",
+    "name": "Computer Keyboard",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/computerKeyboard.glb",
+    "footprint": [
+      0.4,
+      0.17
+    ],
+    "height": 0.04
+  },
+  {
+    "id": "computer-mouse",
+    "name": "Computer Mouse",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/computerMouse.glb",
+    "footprint": [
+      0.1,
+      0.17
+    ],
+    "height": 0.05
+  },
+  {
+    "id": "computer-screen",
+    "name": "Computer Screen",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/computerScreen.glb",
+    "footprint": [
+      0.5,
+      0.13
+    ],
+    "height": 0.37
+  },
+  {
+    "id": "desk",
+    "name": "Desk",
+    "brand": "KENNEY",
+    "type": "TABLES",
+    "file": "/models/kenney/desk.glb",
+    "footprint": [
+      1.43,
+      0.77
+    ],
+    "height": 0.75
+  },
+  {
+    "id": "desk-corner",
+    "name": "Desk Corner",
+    "brand": "KENNEY",
+    "type": "TABLES",
+    "file": "/models/kenney/deskCorner.glb",
+    "footprint": [
+      1.3,
+      1.3
+    ],
+    "height": 0.51
+  },
+  {
+    "id": "doorway",
+    "name": "Doorway",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/doorway.glb",
+    "footprint": [
+      0.49,
+      0.11
+    ],
+    "height": 1.01
+  },
+  {
+    "id": "doorway-front",
+    "name": "Doorway Front",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/doorwayFront.glb",
+    "footprint": [
+      0.49,
+      0.11
+    ],
+    "height": 1.01
+  },
+  {
+    "id": "doorway-open",
+    "name": "Doorway Open",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/doorwayOpen.glb",
+    "footprint": [
+      0.49,
+      0.09
+    ],
+    "height": 1.01
+  },
+  {
+    "id": "dryer",
+    "name": "Dryer",
+    "brand": "KENNEY",
+    "type": "BATHROOM",
+    "file": "/models/kenney/dryer.glb",
+    "footprint": [
+      0.62,
+      0.6
+    ],
+    "height": 0.75
+  },
+  {
+    "id": "floor-corner",
+    "name": "Floor Corner",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/floorCorner.glb",
+    "footprint": [
+      1,
+      1
+    ],
+    "height": 0.09
+  },
+  {
+    "id": "floor-corner-round",
+    "name": "Floor Corner Round",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/floorCornerRound.glb",
+    "footprint": [
+      1,
+      1
+    ],
+    "height": 0.09
+  },
+  {
+    "id": "floor-full",
+    "name": "Floor Full",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/floorFull.glb",
+    "footprint": [
+      1,
+      1
+    ],
+    "height": 0.05
+  },
+  {
+    "id": "floor-half",
+    "name": "Floor Half",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/floorHalf.glb",
+    "footprint": [
+      0.5,
+      1
+    ],
+    "height": 0.05
+  },
+  {
+    "id": "hood-large",
+    "name": "Hood Large",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/hoodLarge.glb",
+    "footprint": [
+      0.6,
+      0.4
+    ],
+    "height": 0.52
+  },
+  {
+    "id": "hood-modern",
+    "name": "Hood Modern",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/hoodModern.glb",
+    "footprint": [
+      0.6,
+      0.4
+    ],
+    "height": 0.56
+  },
+  {
+    "id": "kitchen-bar",
+    "name": "Kitchen Bar",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenBar.glb",
+    "footprint": [
+      0.92,
+      0.45
+    ],
+    "height": 0.9
+  },
+  {
+    "id": "kitchen-bar-end",
+    "name": "Kitchen Bar End",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenBarEnd.glb",
+    "footprint": [
+      0.2,
+      0.41
+    ],
+    "height": 0.83
+  },
+  {
+    "id": "kitchen-blender",
+    "name": "Kitchen Blender",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenBlender.glb",
+    "footprint": [
+      0.21,
+      0.17
+    ],
+    "height": 0.35
+  },
+  {
+    "id": "kitchen-cabinet",
+    "name": "Kitchen Cabinet",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenCabinet.glb",
+    "footprint": [
+      0.62,
+      0.65
+    ],
+    "height": 0.65
+  },
+  {
+    "id": "kitchen-cabinet-corner-inner",
+    "name": "Kitchen Cabinet Corner Inner",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenCabinetCornerInner.glb",
+    "footprint": [
+      0.65,
+      0.65
+    ],
+    "height": 0.64
+  },
+  {
+    "id": "kitchen-cabinet-corner-round",
+    "name": "Kitchen Cabinet Corner Round",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenCabinetCornerRound.glb",
+    "footprint": [
+      0.65,
+      0.65
+    ],
+    "height": 0.65
+  },
+  {
+    "id": "kitchen-cabinet-drawer",
+    "name": "Kitchen Cabinet Drawer",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenCabinetDrawer.glb",
+    "footprint": [
+      0.62,
+      0.65
+    ],
+    "height": 0.65
+  },
+  {
+    "id": "kitchen-cabinet-upper",
+    "name": "Kitchen Cabinet Upper",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenCabinetUpper.glb",
+    "footprint": [
+      0.8,
+      0.41
+    ],
+    "height": 0.73
+  },
+  {
+    "id": "kitchen-cabinet-upper-corner",
+    "name": "Kitchen Cabinet Upper Corner",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenCabinetUpperCorner.glb",
+    "footprint": [
+      0.8,
+      0.78
+    ],
+    "height": 1.45
+  },
+  {
+    "id": "kitchen-cabinet-upper-double",
+    "name": "Kitchen Cabinet Upper Double",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenCabinetUpperDouble.glb",
+    "footprint": [
+      0.8,
+      0.41
+    ],
+    "height": 0.73
+  },
+  {
+    "id": "kitchen-cabinet-upper-low",
+    "name": "Kitchen Cabinet Upper Low",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenCabinetUpperLow.glb",
+    "footprint": [
+      0.8,
+      0.41
+    ],
+    "height": 0.36
+  },
+  {
+    "id": "kitchen-coffee-machine",
+    "name": "Kitchen Coffee Machine",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenCoffeeMachine.glb",
+    "footprint": [
+      0.37,
+      0.47
+    ],
+    "height": 0.35
+  },
+  {
+    "id": "kitchen-fridge",
+    "name": "Kitchen Fridge",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenFridge.glb",
+    "footprint": [
+      0.82,
+      0.56
+    ],
+    "height": 1.75
+  },
+  {
+    "id": "kitchen-fridge-built-in",
+    "name": "Kitchen Fridge Built In",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenFridgeBuiltIn.glb",
+    "footprint": [
+      0.87,
+      0.91
+    ],
+    "height": 1.75
+  },
+  {
+    "id": "kitchen-fridge-large",
+    "name": "Kitchen Fridge Large",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenFridgeLarge.glb",
+    "footprint": [
+      1.05,
+      0.82
+    ],
+    "height": 1.85
+  },
+  {
+    "id": "kitchen-fridge-small",
+    "name": "Kitchen Fridge Small",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenFridgeSmall.glb",
+    "footprint": [
+      0.86,
+      0.58
+    ],
+    "height": 1.2
+  },
+  {
+    "id": "kitchen-microwave",
+    "name": "Kitchen Microwave",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenMicrowave.glb",
+    "footprint": [
+      0.5,
+      0.4
+    ],
+    "height": 0.31
+  },
+  {
+    "id": "kitchen-sink",
+    "name": "Kitchen Sink",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenSink.glb",
+    "footprint": [
+      0.62,
+      0.65
+    ],
+    "height": 0.71
+  },
+  {
+    "id": "kitchen-stove",
+    "name": "Kitchen Stove",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenStove.glb",
+    "footprint": [
+      0.62,
+      0.65
+    ],
+    "height": 0.65
+  },
+  {
+    "id": "kitchen-stove-electric",
+    "name": "Kitchen Stove Electric",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/kitchenStoveElectric.glb",
+    "footprint": [
+      0.62,
+      0.65
+    ],
+    "height": 0.65
+  },
+  {
+    "id": "lamp-round-floor",
+    "name": "Lamp Round Floor",
+    "brand": "KENNEY",
+    "type": "LIGHTING",
+    "file": "/models/kenney/lampRoundFloor.glb",
+    "footprint": [
+      0.27,
+      0.31
+    ],
+    "height": 1.5
+  },
+  {
+    "id": "lamp-round-table",
+    "name": "Lamp Round Table",
+    "brand": "KENNEY",
+    "type": "LIGHTING",
+    "file": "/models/kenney/lampRoundTable.glb",
+    "footprint": [
+      0.22,
+      0.25
+    ],
+    "height": 0.45
+  },
+  {
+    "id": "lamp-square-ceiling",
+    "name": "Lamp Square Ceiling",
+    "brand": "KENNEY",
+    "type": "LIGHTING",
+    "file": "/models/kenney/lampSquareCeiling.glb",
+    "footprint": [
+      0.16,
+      0.16
+    ],
+    "height": 0.3,
+    "mount": "ceiling"
+  },
+  {
+    "id": "lamp-square-floor",
+    "name": "Lamp Square Floor",
+    "brand": "KENNEY",
+    "type": "LIGHTING",
+    "file": "/models/kenney/lampSquareFloor.glb",
+    "footprint": [
+      0.21,
+      0.21
+    ],
+    "height": 1.5
+  },
+  {
+    "id": "lamp-square-table",
+    "name": "Lamp Square Table",
+    "brand": "KENNEY",
+    "type": "LIGHTING",
+    "file": "/models/kenney/lampSquareTable.glb",
+    "footprint": [
+      0.19,
+      0.19
+    ],
+    "height": 0.45
+  },
+  {
+    "id": "lamp-wall",
+    "name": "Lamp Wall",
+    "brand": "KENNEY",
+    "type": "LIGHTING",
+    "file": "/models/kenney/lampWall.glb",
+    "footprint": [
+      0.3,
+      0.2
+    ],
+    "height": 0.12
+  },
+  {
+    "id": "laptop",
+    "name": "Laptop",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/laptop.glb",
+    "footprint": [
+      0.35,
+      0.32
+    ],
+    "height": 0.21
+  },
+  {
+    "id": "lounge-chair",
+    "name": "Lounge Chair",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/loungeChair.glb",
+    "footprint": [
+      0.85,
+      0.71
+    ],
+    "height": 0.8
+  },
+  {
+    "id": "lounge-chair-relax",
+    "name": "Lounge Chair Relax",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/loungeChairRelax.glb",
+    "footprint": [
+      0.62,
+      0.85
+    ],
+    "height": 0.79
+  },
+  {
+    "id": "lounge-design-chair",
+    "name": "Lounge Design Chair",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/loungeDesignChair.glb",
+    "footprint": [
+      0.85,
+      0.48
+    ],
+    "height": 0.47
+  },
+  {
+    "id": "lounge-design-sofa",
+    "name": "Lounge Design Sofa",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/loungeDesignSofa.glb",
+    "footprint": [
+      2,
+      0.73
+    ],
+    "height": 0.71
+  },
+  {
+    "id": "lounge-design-sofa-corner",
+    "name": "Lounge Design Sofa Corner",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/loungeDesignSofaCorner.glb",
+    "footprint": [
+      1.9,
+      1.9
+    ],
+    "height": 0.56
+  },
+  {
+    "id": "lounge-sofa",
+    "name": "Lounge Sofa",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/loungeSofa.glb",
+    "footprint": [
+      2,
+      0.84
+    ],
+    "height": 0.94
+  },
+  {
+    "id": "lounge-sofa-corner",
+    "name": "Lounge Sofa Corner",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/loungeSofaCorner.glb",
+    "footprint": [
+      1.9,
+      1.9
+    ],
+    "height": 0.89
+  },
+  {
+    "id": "lounge-sofa-long",
+    "name": "Lounge Sofa Long",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/loungeSofaLong.glb",
+    "footprint": [
+      1.7,
+      1.42
+    ],
+    "height": 0.8
+  },
+  {
+    "id": "lounge-sofa-ottoman",
+    "name": "Lounge Sofa Ottoman",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/loungeSofaOttoman.glb",
+    "footprint": [
+      0.9,
+      0.92
+    ],
+    "height": 0.47
+  },
+  {
+    "id": "paneling",
+    "name": "Paneling",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/paneling.glb",
+    "footprint": [
+      0.5,
+      0.03
+    ],
+    "height": 0.59
+  },
+  {
+    "id": "pillow",
+    "name": "Pillow",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/pillow.glb",
+    "footprint": [
+      0.45,
+      0.17
+    ],
+    "height": 0.43
+  },
+  {
+    "id": "pillow-blue",
+    "name": "Pillow Blue",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/pillowBlue.glb",
+    "footprint": [
+      0.45,
+      0.12
+    ],
+    "height": 0.25
+  },
+  {
+    "id": "pillow-blue-long",
+    "name": "Pillow Blue Long",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/pillowBlueLong.glb",
+    "footprint": [
+      0.6,
+      0.1
+    ],
+    "height": 0.26
+  },
+  {
+    "id": "pillow-long",
+    "name": "Pillow Long",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/pillowLong.glb",
+    "footprint": [
+      0.6,
+      0.14
+    ],
+    "height": 0.34
+  },
+  {
+    "id": "plant-small-1",
+    "name": "Plant Small 1",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/plantSmall1.glb",
+    "footprint": [
+      0.17,
+      0.17
+    ],
+    "height": 0.25
+  },
+  {
+    "id": "plant-small-2",
+    "name": "Plant Small 2",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/plantSmall2.glb",
+    "footprint": [
+      0.17,
+      0.17
+    ],
+    "height": 0.25
+  },
+  {
+    "id": "plant-small-3",
+    "name": "Plant Small 3",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/plantSmall3.glb",
+    "footprint": [
+      0.17,
+      0.15
+    ],
+    "height": 0.25
+  },
+  {
+    "id": "potted-plant",
+    "name": "Potted Plant",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/pottedPlant.glb",
+    "footprint": [
+      0.28,
+      0.32
+    ],
+    "height": 0.87
+  },
+  {
+    "id": "radio",
+    "name": "Radio",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/radio.glb",
+    "footprint": [
+      0.35,
+      0.11
+    ],
+    "height": 0.25
+  },
+  {
+    "id": "rug-doormat",
+    "name": "Rug Doormat",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/rugDoormat.glb",
+    "footprint": [
+      0.6,
+      0.33
+    ],
+    "height": 0.01
+  },
+  {
+    "id": "rug-rectangle",
+    "name": "Rug Rectangle",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/rugRectangle.glb",
+    "footprint": [
+      2.4,
+      1.41
+    ],
+    "height": 0.02
+  },
+  {
+    "id": "rug-round",
+    "name": "Rug Round",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/rugRound.glb",
+    "footprint": [
+      2,
+      2
+    ],
+    "height": 0.02
+  },
+  {
+    "id": "rug-rounded",
+    "name": "Rug Rounded",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/rugRounded.glb",
+    "footprint": [
+      2,
+      1.17
+    ],
+    "height": 0.01
+  },
+  {
+    "id": "rug-square",
+    "name": "Rug Square",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/rugSquare.glb",
+    "footprint": [
+      1.97,
+      2
+    ],
+    "height": 0.02
+  },
+  {
+    "id": "shower",
+    "name": "Shower",
+    "brand": "KENNEY",
+    "type": "BATHROOM",
+    "file": "/models/kenney/shower.glb",
+    "footprint": [
+      0.92,
+      0.95
+    ],
+    "height": 1.79
+  },
+  {
+    "id": "shower-round",
+    "name": "Shower Round",
+    "brand": "KENNEY",
+    "type": "BATHROOM",
+    "file": "/models/kenney/showerRound.glb",
+    "footprint": [
+      0.95,
+      0.95
+    ],
+    "height": 1.85
+  },
+  {
+    "id": "side-table",
+    "name": "Side Table",
+    "brand": "KENNEY",
+    "type": "TABLES",
+    "file": "/models/kenney/sideTable.glb",
+    "footprint": [
+      0.76,
+      0.31
+    ],
+    "height": 0.55
+  },
+  {
+    "id": "side-table-drawers",
+    "name": "Side Table Drawers",
+    "brand": "KENNEY",
+    "type": "TABLES",
+    "file": "/models/kenney/sideTableDrawers.glb",
+    "footprint": [
+      0.76,
+      0.32
+    ],
+    "height": 0.55
+  },
+  {
+    "id": "speaker",
+    "name": "Speaker",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/speaker.glb",
+    "footprint": [
+      0.19,
+      0.19
+    ],
+    "height": 0.8
+  },
+  {
+    "id": "speaker-small",
+    "name": "Speaker Small",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/speakerSmall.glb",
+    "footprint": [
+      0.17,
+      0.16
+    ],
+    "height": 0.35
+  },
+  {
+    "id": "stairs",
+    "name": "Stairs",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/stairs.glb",
+    "footprint": [
+      1.82,
+      0.79
+    ],
+    "height": 1.34
+  },
+  {
+    "id": "stairs-corner",
+    "name": "Stairs Corner",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/stairsCorner.glb",
+    "footprint": [
+      1.77,
+      1.43
+    ],
+    "height": 1.34
+  },
+  {
+    "id": "stairs-open",
+    "name": "Stairs Open",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/stairsOpen.glb",
+    "footprint": [
+      1.82,
+      0.79
+    ],
+    "height": 1.34
+  },
+  {
+    "id": "stairs-open-single",
+    "name": "Stairs Open Single",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/stairsOpenSingle.glb",
+    "footprint": [
+      1.82,
+      0.79
+    ],
+    "height": 1.34
+  },
+  {
+    "id": "stool-bar",
+    "name": "Stool Bar",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/stoolBar.glb",
+    "footprint": [
+      0.48,
+      0.41
+    ],
+    "height": 0.78
+  },
+  {
+    "id": "stool-bar-square",
+    "name": "Stool Bar Square",
+    "brand": "KENNEY",
+    "type": "SEATING",
+    "file": "/models/kenney/stoolBarSquare.glb",
+    "footprint": [
+      0.3,
+      0.28
+    ],
+    "height": 0.78
+  },
+  {
+    "id": "table",
+    "name": "Table",
+    "brand": "KENNEY",
+    "type": "TABLES",
+    "file": "/models/kenney/table.glb",
+    "footprint": [
+      1.6,
+      0.85
+    ],
+    "height": 0.62
+  },
+  {
+    "id": "table-cloth",
+    "name": "Table Cloth",
+    "brand": "KENNEY",
+    "type": "TABLES",
+    "file": "/models/kenney/tableCloth.glb",
+    "footprint": [
+      1.6,
+      0.85
+    ],
+    "height": 0.62
+  },
+  {
+    "id": "table-coffee",
+    "name": "Table Coffee",
+    "brand": "KENNEY",
+    "type": "TABLES",
+    "file": "/models/kenney/tableCoffee.glb",
+    "footprint": [
+      1.2,
+      0.73
+    ],
+    "height": 0.42
+  },
+  {
+    "id": "table-coffee-glass",
+    "name": "Table Coffee Glass",
+    "brand": "KENNEY",
+    "type": "TABLES",
+    "file": "/models/kenney/tableCoffeeGlass.glb",
+    "footprint": [
+      1.2,
+      0.73
+    ],
+    "height": 0.42
+  },
+  {
+    "id": "table-coffee-glass-square",
+    "name": "Table Coffee Glass Square",
+    "brand": "KENNEY",
+    "type": "TABLES",
+    "file": "/models/kenney/tableCoffeeGlassSquare.glb",
+    "footprint": [
+      1.2,
+      1.2
+    ],
+    "height": 0.69
+  },
+  {
+    "id": "table-coffee-square",
+    "name": "Table Coffee Square",
+    "brand": "KENNEY",
+    "type": "TABLES",
+    "file": "/models/kenney/tableCoffeeSquare.glb",
+    "footprint": [
+      1.2,
+      1.2
+    ],
+    "height": 0.69
+  },
+  {
+    "id": "table-cross",
+    "name": "Table Cross",
+    "brand": "KENNEY",
+    "type": "TABLES",
+    "file": "/models/kenney/tableCross.glb",
+    "footprint": [
+      0.85,
+      0.45
+    ],
+    "height": 0.35
+  },
+  {
+    "id": "table-cross-cloth",
+    "name": "Table Cross Cloth",
+    "brand": "KENNEY",
+    "type": "TABLES",
+    "file": "/models/kenney/tableCrossCloth.glb",
+    "footprint": [
+      0.85,
+      0.45
+    ],
+    "height": 0.35
+  },
+  {
+    "id": "table-glass",
+    "name": "Table Glass",
+    "brand": "KENNEY",
+    "type": "TABLES",
+    "file": "/models/kenney/tableGlass.glb",
+    "footprint": [
+      0.84,
+      0.45
+    ],
+    "height": 0.33
+  },
+  {
+    "id": "table-round",
+    "name": "Table Round",
+    "brand": "KENNEY",
+    "type": "TABLES",
+    "file": "/models/kenney/tableRound.glb",
+    "footprint": [
+      1.42,
+      1.64
+    ],
+    "height": 0.75
+  },
+  {
+    "id": "television-antenna",
+    "name": "Television Antenna",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/televisionAntenna.glb",
+    "footprint": [
+      0.3,
+      0.09
+    ],
+    "height": 0.12
+  },
+  {
+    "id": "television-modern",
+    "name": "Television Modern",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/televisionModern.glb",
+    "footprint": [
+      1.1,
+      0.21
+    ],
+    "height": 0.73
+  },
+  {
+    "id": "television-vintage",
+    "name": "Television Vintage",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/televisionVintage.glb",
+    "footprint": [
+      0.7,
+      0.46
+    ],
+    "height": 0.46
+  },
+  {
+    "id": "toaster",
+    "name": "Toaster",
+    "brand": "KENNEY",
+    "type": "KITCHEN",
+    "file": "/models/kenney/toaster.glb",
+    "footprint": [
+      0.26,
+      0.14
+    ],
+    "height": 0.18
+  },
+  {
+    "id": "toilet",
+    "name": "Toilet",
+    "brand": "KENNEY",
+    "type": "BATHROOM",
+    "file": "/models/kenney/toilet.glb",
+    "footprint": [
+      0.45,
+      0.68
+    ],
+    "height": 0.64
+  },
+  {
+    "id": "toilet-square",
+    "name": "Toilet Square",
+    "brand": "KENNEY",
+    "type": "BATHROOM",
+    "file": "/models/kenney/toiletSquare.glb",
+    "footprint": [
+      0.53,
+      0.68
+    ],
+    "height": 0.79
+  },
+  {
+    "id": "trashcan",
+    "name": "Trashcan",
+    "brand": "KENNEY",
+    "type": "DECOR",
+    "file": "/models/kenney/trashcan.glb",
+    "footprint": [
+      0.24,
+      0.27
+    ],
+    "height": 0.5
+  },
+  {
+    "id": "wall",
+    "name": "Wall",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/wall.glb",
+    "footprint": [
+      2,
+      0.1
+    ],
+    "height": 2.58
+  },
+  {
+    "id": "wall-corner",
+    "name": "Wall Corner",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/wallCorner.glb",
+    "footprint": [
+      2,
+      2
+    ],
+    "height": 4.69
+  },
+  {
+    "id": "wall-corner-rond",
+    "name": "Wall Corner Rond",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/wallCornerRond.glb",
+    "footprint": [
+      2,
+      2
+    ],
+    "height": 4.69
+  },
+  {
+    "id": "wall-doorway",
+    "name": "Wall Doorway",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/wallDoorway.glb",
+    "footprint": [
+      2,
+      0.18
+    ],
+    "height": 2.58
+  },
+  {
+    "id": "wall-doorway-wide",
+    "name": "Wall Doorway Wide",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/wallDoorwayWide.glb",
+    "footprint": [
+      2,
+      0.18
+    ],
+    "height": 2.58
+  },
+  {
+    "id": "wall-half",
+    "name": "Wall Half",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/wallHalf.glb",
+    "footprint": [
+      2,
+      0.2
+    ],
+    "height": 5.16
+  },
+  {
+    "id": "wall-window",
+    "name": "Wall Window",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/wallWindow.glb",
+    "footprint": [
+      2,
+      0.18
+    ],
+    "height": 2.58
+  },
+  {
+    "id": "wall-window-slide",
+    "name": "Wall Window Slide",
+    "brand": "KENNEY",
+    "type": "OTHER",
+    "file": "/models/kenney/wallWindowSlide.glb",
+    "footprint": [
+      2,
+      0.18
+    ],
+    "height": 2.58
+  },
+  {
+    "id": "washer",
+    "name": "Washer",
+    "brand": "KENNEY",
+    "type": "BATHROOM",
+    "file": "/models/kenney/washer.glb",
+    "footprint": [
+      0.62,
+      0.62
+    ],
+    "height": 0.75
+  },
+  {
+    "id": "washer-dryer-stacked",
+    "name": "Washer Dryer Stacked",
+    "brand": "KENNEY",
+    "type": "BATHROOM",
+    "file": "/models/kenney/washerDryerStacked.glb",
+    "footprint": [
+      0.62,
+      0.62
+    ],
+    "height": 1.49
+  },
+  {
+    "id": "armchair-pillows",
+    "name": "Armchair Pillows",
+    "brand": "KAYKIT",
+    "type": "SEATING",
+    "file": "/models/kaykit-furniture/armchair-pillows.glb",
+    "footprint": [
+      0.95,
+      0.84
+    ],
+    "height": 0.65
+  },
+  {
+    "id": "armchair",
+    "name": "Armchair",
+    "brand": "KAYKIT",
+    "type": "SEATING",
+    "file": "/models/kaykit-furniture/armchair.glb",
+    "footprint": [
+      0.95,
+      0.84
+    ],
+    "height": 0.65
+  },
+  {
+    "id": "bed-double-a",
+    "name": "Bed Double A",
+    "brand": "KAYKIT",
+    "type": "BEDS",
+    "file": "/models/kaykit-furniture/bed-double-a.glb",
+    "footprint": [
+      2.12,
+      2.05
+    ],
+    "height": 0.68
+  },
+  {
+    "id": "bed-double-b",
+    "name": "Bed Double B",
+    "brand": "KAYKIT",
+    "type": "BEDS",
+    "file": "/models/kaykit-furniture/bed-double-b.glb",
+    "footprint": [
+      2.12,
+      2.05
+    ],
+    "height": 0.68
+  },
+  {
+    "id": "bed-single-a",
+    "name": "Bed Single A",
+    "brand": "KAYKIT",
+    "type": "BEDS",
+    "file": "/models/kaykit-furniture/bed-single-a.glb",
+    "footprint": [
+      1.07,
+      2
+    ],
+    "height": 0.67
+  },
+  {
+    "id": "bed-single-b",
+    "name": "Bed Single B",
+    "brand": "KAYKIT",
+    "type": "BEDS",
+    "file": "/models/kaykit-furniture/bed-single-b.glb",
+    "footprint": [
+      1.07,
+      2
+    ],
+    "height": 0.67
+  },
+  {
+    "id": "book-set",
+    "name": "Book Set",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/book-set.glb",
+    "footprint": [
+      0.39,
+      0.18
+    ],
+    "height": 0.25
+  },
+  {
+    "id": "book-single",
+    "name": "Book Single",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/book-single.glb",
+    "footprint": [
+      0.13,
+      0.18
+    ],
+    "height": 0.25
+  },
+  {
+    "id": "cabinet-medium-decorated",
+    "name": "Cabinet Medium Decorated",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-furniture/cabinet-medium-decorated.glb",
+    "footprint": [
+      1.2,
+      0.59
+    ],
+    "height": 1.07
+  },
+  {
+    "id": "cabinet-medium",
+    "name": "Cabinet Medium",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-furniture/cabinet-medium.glb",
+    "footprint": [
+      1.2,
+      0.6
+    ],
+    "height": 0.6
+  },
+  {
+    "id": "cabinet-small-decorated",
+    "name": "Cabinet Small Decorated",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-furniture/cabinet-small-decorated.glb",
+    "footprint": [
+      0.58,
+      0.61
+    ],
+    "height": 0.9
+  },
+  {
+    "id": "cabinet-small",
+    "name": "Cabinet Small",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-furniture/cabinet-small.glb",
+    "footprint": [
+      0.9,
+      0.9
+    ],
+    "height": 0.9
+  },
+  {
+    "id": "cactus-medium-a",
+    "name": "Cactus Medium A",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/cactus-medium-a.glb",
+    "footprint": [
+      0.96,
+      0.91
+    ],
+    "height": 0.9
+  },
+  {
+    "id": "cactus-medium-b",
+    "name": "Cactus Medium B",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/cactus-medium-b.glb",
+    "footprint": [
+      0.96,
+      0.91
+    ],
+    "height": 0.9
+  },
+  {
+    "id": "cactus-small-a",
+    "name": "Cactus Small A",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/cactus-small-a.glb",
+    "footprint": [
+      0.45,
+      0.45
+    ],
+    "height": 0.5
+  },
+  {
+    "id": "cactus-small-b",
+    "name": "Cactus Small B",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/cactus-small-b.glb",
+    "footprint": [
+      0.45,
+      0.45
+    ],
+    "height": 0.5
+  },
+  {
+    "id": "chair-a-wood",
+    "name": "Chair A Wood",
+    "brand": "KAYKIT",
+    "type": "SEATING",
+    "file": "/models/kaykit-furniture/chair-a-wood.glb",
+    "footprint": [
+      0.57,
+      0.64
+    ],
+    "height": 0.95
+  },
+  {
+    "id": "chair-a",
+    "name": "Chair A",
+    "brand": "KAYKIT",
+    "type": "SEATING",
+    "file": "/models/kaykit-furniture/chair-a.glb",
+    "footprint": [
+      0.57,
+      0.64
+    ],
+    "height": 0.95
+  },
+  {
+    "id": "chair-b-wood",
+    "name": "Chair B Wood",
+    "brand": "KAYKIT",
+    "type": "SEATING",
+    "file": "/models/kaykit-furniture/chair-b-wood.glb",
+    "footprint": [
+      0.57,
+      0.64
+    ],
+    "height": 0.95
+  },
+  {
+    "id": "chair-b",
+    "name": "Chair B",
+    "brand": "KAYKIT",
+    "type": "SEATING",
+    "file": "/models/kaykit-furniture/chair-b.glb",
+    "footprint": [
+      0.57,
+      0.64
+    ],
+    "height": 0.95
+  },
+  {
+    "id": "chair-c",
+    "name": "Chair C",
+    "brand": "KAYKIT",
+    "type": "SEATING",
+    "file": "/models/kaykit-furniture/chair-c.glb",
+    "footprint": [
+      0.59,
+      0.74
+    ],
+    "height": 0.95
+  },
+  {
+    "id": "chair-stool-wood",
+    "name": "Chair Stool Wood",
+    "brand": "KAYKIT",
+    "type": "SEATING",
+    "file": "/models/kaykit-furniture/chair-stool-wood.glb",
+    "footprint": [
+      0.55,
+      0.55
+    ],
+    "height": 0.37
+  },
+  {
+    "id": "chair-stool",
+    "name": "Chair Stool",
+    "brand": "KAYKIT",
+    "type": "SEATING",
+    "file": "/models/kaykit-furniture/chair-stool.glb",
+    "footprint": [
+      0.55,
+      0.55
+    ],
+    "height": 0.37
+  },
+  {
+    "id": "couch-pillows",
+    "name": "Couch Pillows",
+    "brand": "KAYKIT",
+    "type": "SEATING",
+    "file": "/models/kaykit-furniture/couch-pillows.glb",
+    "footprint": [
+      2.2,
+      1.17
+    ],
+    "height": 0.9
+  },
+  {
+    "id": "couch",
+    "name": "Couch",
+    "brand": "KAYKIT",
+    "type": "SEATING",
+    "file": "/models/kaykit-furniture/couch.glb",
+    "footprint": [
+      2.2,
+      1.17
+    ],
+    "height": 0.9
+  },
+  {
+    "id": "lamp-standing",
+    "name": "Lamp Standing",
+    "brand": "KAYKIT",
+    "type": "LIGHTING",
+    "file": "/models/kaykit-furniture/lamp-standing.glb",
+    "footprint": [
+      0.63,
+      0.63
+    ],
+    "height": 1.6
+  },
+  {
+    "id": "lamp-table",
+    "name": "Lamp Table",
+    "brand": "KAYKIT",
+    "type": "LIGHTING",
+    "file": "/models/kaykit-furniture/lamp-table.glb",
+    "footprint": [
+      0.49,
+      0.49
+    ],
+    "height": 0.5
+  },
+  {
+    "id": "pictureframe-large-a",
+    "name": "Pictureframe Large A",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/pictureframe-large-a.glb",
+    "footprint": [
+      0.59,
+      0.12
+    ],
+    "height": 0.7
+  },
+  {
+    "id": "pictureframe-large-b",
+    "name": "Pictureframe Large B",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/pictureframe-large-b.glb",
+    "footprint": [
+      1.17,
+      0.12
+    ],
+    "height": 0.7
+  },
+  {
+    "id": "pictureframe-medium",
+    "name": "Pictureframe Medium",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/pictureframe-medium.glb",
+    "footprint": [
+      0.54,
+      0.16
+    ],
+    "height": 0.7
+  },
+  {
+    "id": "pictureframe-small-a",
+    "name": "Pictureframe Small A",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/pictureframe-small-a.glb",
+    "footprint": [
+      0.58,
+      0.23
+    ],
+    "height": 0.7
+  },
+  {
+    "id": "pictureframe-small-b",
+    "name": "Pictureframe Small B",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/pictureframe-small-b.glb",
+    "footprint": [
+      1.11,
+      0.32
+    ],
+    "height": 0.7
+  },
+  {
+    "id": "pictureframe-small-c",
+    "name": "Pictureframe Small C",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/pictureframe-small-c.glb",
+    "footprint": [
+      0.7,
+      0.28
+    ],
+    "height": 0.7
+  },
+  {
+    "id": "pictureframe-standing-a",
+    "name": "Pictureframe Standing A",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/pictureframe-standing-a.glb",
+    "footprint": [
+      0.57,
+      0.43
+    ],
+    "height": 0.7
+  },
+  {
+    "id": "pictureframe-standing-b",
+    "name": "Pictureframe Standing B",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/pictureframe-standing-b.glb",
+    "footprint": [
+      1.05,
+      0.53
+    ],
+    "height": 0.7
+  },
+  {
+    "id": "pillow-a",
+    "name": "Pillow A",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/pillow-a.glb",
+    "footprint": [
+      0.45,
+      0.35
+    ],
+    "height": 0.14
+  },
+  {
+    "id": "pillow-b",
+    "name": "Pillow B",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/pillow-b.glb",
+    "footprint": [
+      0.45,
+      0.35
+    ],
+    "height": 0.14
+  },
+  {
+    "id": "rug-oval-a",
+    "name": "Rug Oval A",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/rug-oval-a.glb",
+    "footprint": [
+      2,
+      1.33
+    ],
+    "height": 0.07
+  },
+  {
+    "id": "rug-oval-b",
+    "name": "Rug Oval B",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/rug-oval-b.glb",
+    "footprint": [
+      2,
+      1.33
+    ],
+    "height": 0.07
+  },
+  {
+    "id": "rug-rectangle-a",
+    "name": "Rug Rectangle A",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/rug-rectangle-a.glb",
+    "footprint": [
+      2.4,
+      1.6
+    ],
+    "height": 0.08
+  },
+  {
+    "id": "rug-rectangle-b",
+    "name": "Rug Rectangle B",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/rug-rectangle-b.glb",
+    "footprint": [
+      2.4,
+      1.6
+    ],
+    "height": 0.08
+  },
+  {
+    "id": "rug-rectangle-stripes-a",
+    "name": "Rug Rectangle Stripes A",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/rug-rectangle-stripes-a.glb",
+    "footprint": [
+      2.4,
+      1.6
+    ],
+    "height": 0.08
+  },
+  {
+    "id": "rug-rectangle-stripes-b",
+    "name": "Rug Rectangle Stripes B",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-furniture/rug-rectangle-stripes-b.glb",
+    "footprint": [
+      2.4,
+      1.6
+    ],
+    "height": 0.08
+  },
+  {
+    "id": "shelf-a-big",
+    "name": "Shelf A Big",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-furniture/shelf-a-big.glb",
+    "footprint": [
+      0.9,
+      0.23
+    ],
+    "height": 0.18
+  },
+  {
+    "id": "shelf-a-small",
+    "name": "Shelf A Small",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-furniture/shelf-a-small.glb",
+    "footprint": [
+      0.6,
+      0.3
+    ],
+    "height": 0.24
+  },
+  {
+    "id": "shelf-b-large-decorated",
+    "name": "Shelf B Large Decorated",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-furniture/shelf-b-large-decorated.glb",
+    "footprint": [
+      0.9,
+      0.23
+    ],
+    "height": 0.37
+  },
+  {
+    "id": "shelf-b-large",
+    "name": "Shelf B Large",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-furniture/shelf-b-large.glb",
+    "footprint": [
+      0.9,
+      0.23
+    ],
+    "height": 0.18
+  },
+  {
+    "id": "shelf-b-small-decorated",
+    "name": "Shelf B Small Decorated",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-furniture/shelf-b-small-decorated.glb",
+    "footprint": [
+      0.6,
+      0.34
+    ],
+    "height": 0.61
+  },
+  {
+    "id": "shelf-b-small",
+    "name": "Shelf B Small",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-furniture/shelf-b-small.glb",
+    "footprint": [
+      0.6,
+      0.3
+    ],
+    "height": 0.24
+  },
+  {
+    "id": "table-low",
+    "name": "Table Low",
+    "brand": "KAYKIT",
+    "type": "TABLES",
+    "file": "/models/kaykit-furniture/table-low.glb",
+    "footprint": [
+      2.4,
+      1.5
+    ],
+    "height": 0.5
+  },
+  {
+    "id": "table-medium-long",
+    "name": "Table Medium Long",
+    "brand": "KAYKIT",
+    "type": "TABLES",
+    "file": "/models/kaykit-furniture/table-medium-long.glb",
+    "footprint": [
+      3,
+      2
+    ],
+    "height": 1
+  },
+  {
+    "id": "table-medium",
+    "name": "Table Medium",
+    "brand": "KAYKIT",
+    "type": "TABLES",
+    "file": "/models/kaykit-furniture/table-medium.glb",
+    "footprint": [
+      2,
+      2
+    ],
+    "height": 1
+  },
+  {
+    "id": "table-small",
+    "name": "Table Small",
+    "brand": "KAYKIT",
+    "type": "TABLES",
+    "file": "/models/kaykit-furniture/table-small.glb",
+    "footprint": [
+      1,
+      1
+    ],
+    "height": 1
+  },
+  {
+    "id": "bowl-dirty",
+    "name": "Bowl Dirty",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/bowl-dirty.glb",
+    "footprint": [
+      0.22,
+      0.22
+    ],
+    "height": 0.07
+  },
+  {
+    "id": "bowl-small",
+    "name": "Bowl Small",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/bowl-small.glb",
+    "footprint": [
+      0.18,
+      0.18
+    ],
+    "height": 0.07
+  },
+  {
+    "id": "bowl",
+    "name": "Bowl",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/bowl.glb",
+    "footprint": [
+      0.22,
+      0.22
+    ],
+    "height": 0.07
+  },
+  {
+    "id": "chair-a-2",
+    "name": "Chair A 2",
+    "brand": "KAYKIT",
+    "type": "SEATING",
+    "file": "/models/kaykit-restaurant/chair-a.glb",
+    "footprint": [
+      0.59,
+      0.63
+    ],
+    "height": 0.95
+  },
+  {
+    "id": "chair-b-2",
+    "name": "Chair B 2",
+    "brand": "KAYKIT",
+    "type": "SEATING",
+    "file": "/models/kaykit-restaurant/chair-b.glb",
+    "footprint": [
+      0.59,
+      0.63
+    ],
+    "height": 0.95
+  },
+  {
+    "id": "chair-stool-2",
+    "name": "Chair Stool 2",
+    "brand": "KAYKIT",
+    "type": "SEATING",
+    "file": "/models/kaykit-restaurant/chair-stool.glb",
+    "footprint": [
+      0.55,
+      0.55
+    ],
+    "height": 0.37
+  },
+  {
+    "id": "crate-buns",
+    "name": "Crate Buns",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-restaurant/crate-buns.glb",
+    "footprint": [
+      0.55,
+      0.55
+    ],
+    "height": 0.22
+  },
+  {
+    "id": "crate-carrots",
+    "name": "Crate Carrots",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-restaurant/crate-carrots.glb",
+    "footprint": [
+      0.55,
+      0.55
+    ],
+    "height": 0.26
+  },
+  {
+    "id": "crate-cheese",
+    "name": "Crate Cheese",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-restaurant/crate-cheese.glb",
+    "footprint": [
+      0.55,
+      0.55
+    ],
+    "height": 0.26
+  },
+  {
+    "id": "crate-ham",
+    "name": "Crate Ham",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-restaurant/crate-ham.glb",
+    "footprint": [
+      0.55,
+      0.55
+    ],
+    "height": 0.25
+  },
+  {
+    "id": "crate-lettuce",
+    "name": "Crate Lettuce",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-restaurant/crate-lettuce.glb",
+    "footprint": [
+      0.55,
+      0.55
+    ],
+    "height": 0.27
+  },
+  {
+    "id": "crate-lid",
+    "name": "Crate Lid",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-restaurant/crate-lid.glb",
+    "footprint": [
+      0.55,
+      0.55
+    ],
+    "height": 0.05
+  },
+  {
+    "id": "crate-onions",
+    "name": "Crate Onions",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-restaurant/crate-onions.glb",
+    "footprint": [
+      0.55,
+      0.55
+    ],
+    "height": 0.25
+  },
+  {
+    "id": "crate-potatoes",
+    "name": "Crate Potatoes",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-restaurant/crate-potatoes.glb",
+    "footprint": [
+      0.55,
+      0.55
+    ],
+    "height": 0.27
+  },
+  {
+    "id": "crate-steak",
+    "name": "Crate Steak",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-restaurant/crate-steak.glb",
+    "footprint": [
+      0.55,
+      0.55
+    ],
+    "height": 0.24
+  },
+  {
+    "id": "crate-tomatoes",
+    "name": "Crate Tomatoes",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-restaurant/crate-tomatoes.glb",
+    "footprint": [
+      0.55,
+      0.55
+    ],
+    "height": 0.25
+  },
+  {
+    "id": "crate",
+    "name": "Crate",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-restaurant/crate.glb",
+    "footprint": [
+      0.55,
+      0.55
+    ],
+    "height": 0.22
+  },
+  {
+    "id": "cuttingboard",
+    "name": "Cuttingboard",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/cuttingboard.glb",
+    "footprint": [
+      0.4,
+      0.27
+    ],
+    "height": 0.04
+  },
+  {
+    "id": "dishrack-plates",
+    "name": "Dishrack Plates",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-restaurant/dishrack-plates.glb",
+    "footprint": [
+      0.45,
+      0.45
+    ],
+    "height": 0.41
+  },
+  {
+    "id": "dishrack",
+    "name": "Dishrack",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-restaurant/dishrack.glb",
+    "footprint": [
+      0.45,
+      0.45
+    ],
+    "height": 0.23
+  },
+  {
+    "id": "door-a",
+    "name": "Door A",
+    "brand": "KAYKIT",
+    "type": "OTHER",
+    "file": "/models/kaykit-restaurant/door-a.glb",
+    "footprint": [
+      1.2,
+      0.58
+    ],
+    "height": 2.1
+  },
+  {
+    "id": "door-b",
+    "name": "Door B",
+    "brand": "KAYKIT",
+    "type": "OTHER",
+    "file": "/models/kaykit-restaurant/door-b.glb",
+    "footprint": [
+      1.2,
+      0.58
+    ],
+    "height": 2.1
+  },
+  {
+    "id": "extractorhood",
+    "name": "Extractorhood",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/extractorhood.glb",
+    "footprint": [
+      0.7,
+      0.56
+    ],
+    "height": 0.7,
+    "mount": "ceiling"
+  },
+  {
+    "id": "floor-kitchen-small",
+    "name": "Floor Kitchen Small",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/floor-kitchen-small.glb",
+    "footprint": [
+      1,
+      1
+    ],
+    "height": 0.25
+  },
+  {
+    "id": "floor-kitchen",
+    "name": "Floor Kitchen",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/floor-kitchen.glb",
+    "footprint": [
+      1,
+      1
+    ],
+    "height": 0.13
+  },
+  {
+    "id": "food-burger",
+    "name": "Food Burger",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-burger.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.23
+  },
+  {
+    "id": "food-dinner",
+    "name": "Food Dinner",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-dinner.glb",
+    "footprint": [
+      0.35,
+      0.32
+    ],
+    "height": 0.31
+  },
+  {
+    "id": "food-ingredient-bun-bottom",
+    "name": "Food Ingredient Bun Bottom",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-bun-bottom.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.07
+  },
+  {
+    "id": "food-ingredient-bun-top",
+    "name": "Food Ingredient Bun Top",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-bun-top.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.11
+  },
+  {
+    "id": "food-ingredient-bun",
+    "name": "Food Ingredient Bun",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-bun.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.18
+  },
+  {
+    "id": "food-ingredient-burger-cooked",
+    "name": "Food Ingredient Burger Cooked",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-burger-cooked.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.07
+  },
+  {
+    "id": "food-ingredient-burger-trash",
+    "name": "Food Ingredient Burger Trash",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-burger-trash.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.07
+  },
+  {
+    "id": "food-ingredient-burger-uncooked",
+    "name": "Food Ingredient Burger Uncooked",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-burger-uncooked.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.07
+  },
+  {
+    "id": "food-ingredient-carrot-chopped",
+    "name": "Food Ingredient Carrot Chopped",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-carrot-chopped.glb",
+    "footprint": [
+      0.25,
+      0.11
+    ],
+    "height": 0.1
+  },
+  {
+    "id": "food-ingredient-carrot-pieces",
+    "name": "Food Ingredient Carrot Pieces",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-carrot-pieces.glb",
+    "footprint": [
+      0.19,
+      0.25
+    ],
+    "height": 0.11
+  },
+  {
+    "id": "food-ingredient-carrot",
+    "name": "Food Ingredient Carrot",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-carrot.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.57
+  },
+  {
+    "id": "food-ingredient-cheese-chopped",
+    "name": "Food Ingredient Cheese Chopped",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-cheese-chopped.glb",
+    "footprint": [
+      0.25,
+      0.18
+    ],
+    "height": 0.12
+  },
+  {
+    "id": "food-ingredient-cheese-slice",
+    "name": "Food Ingredient Cheese Slice",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-cheese-slice.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.03
+  },
+  {
+    "id": "food-ingredient-cheese",
+    "name": "Food Ingredient Cheese",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-cheese.glb",
+    "footprint": [
+      0.25,
+      0.18
+    ],
+    "height": 0.13
+  },
+  {
+    "id": "food-ingredient-ham-cooked",
+    "name": "Food Ingredient Ham Cooked",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-ham-cooked.glb",
+    "footprint": [
+      0.25,
+      0.15
+    ],
+    "height": 0.15
+  },
+  {
+    "id": "food-ingredient-ham-trash",
+    "name": "Food Ingredient Ham Trash",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-ham-trash.glb",
+    "footprint": [
+      0.25,
+      0.15
+    ],
+    "height": 0.15
+  },
+  {
+    "id": "food-ingredient-ham",
+    "name": "Food Ingredient Ham",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-ham.glb",
+    "footprint": [
+      0.25,
+      0.15
+    ],
+    "height": 0.15
+  },
+  {
+    "id": "food-ingredient-lettuce-chopped",
+    "name": "Food Ingredient Lettuce Chopped",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-lettuce-chopped.glb",
+    "footprint": [
+      0.25,
+      0.17
+    ],
+    "height": 0.11
+  },
+  {
+    "id": "food-ingredient-lettuce-slice",
+    "name": "Food Ingredient Lettuce Slice",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-lettuce-slice.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.03
+  },
+  {
+    "id": "food-ingredient-lettuce",
+    "name": "Food Ingredient Lettuce",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-lettuce.glb",
+    "footprint": [
+      0.24,
+      0.25
+    ],
+    "height": 0.18
+  },
+  {
+    "id": "food-ingredient-onion-chopped",
+    "name": "Food Ingredient Onion Chopped",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-onion-chopped.glb",
+    "footprint": [
+      0.25,
+      0.15
+    ],
+    "height": 0.15
+  },
+  {
+    "id": "food-ingredient-onion-rings",
+    "name": "Food Ingredient Onion Rings",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-onion-rings.glb",
+    "footprint": [
+      0.25,
+      0.24
+    ],
+    "height": 0.03
+  },
+  {
+    "id": "food-ingredient-onion",
+    "name": "Food Ingredient Onion",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-onion.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.29
+  },
+  {
+    "id": "food-ingredient-potato-chopped",
+    "name": "Food Ingredient Potato Chopped",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-potato-chopped.glb",
+    "footprint": [
+      0.25,
+      0.17
+    ],
+    "height": 0.14
+  },
+  {
+    "id": "food-ingredient-potato-mashed",
+    "name": "Food Ingredient Potato Mashed",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-potato-mashed.glb",
+    "footprint": [
+      0.24,
+      0.25
+    ],
+    "height": 0.08
+  },
+  {
+    "id": "food-ingredient-potato",
+    "name": "Food Ingredient Potato",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-potato.glb",
+    "footprint": [
+      0.22,
+      0.25
+    ],
+    "height": 0.29
+  },
+  {
+    "id": "food-ingredient-steak-pieces",
+    "name": "Food Ingredient Steak Pieces",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-steak-pieces.glb",
+    "footprint": [
+      0.25,
+      0.24
+    ],
+    "height": 0.17
+  },
+  {
+    "id": "food-ingredient-steak",
+    "name": "Food Ingredient Steak",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-steak.glb",
+    "footprint": [
+      0.25,
+      0.21
+    ],
+    "height": 0.07
+  },
+  {
+    "id": "food-ingredient-tomato-slice",
+    "name": "Food Ingredient Tomato Slice",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-tomato-slice.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.04
+  },
+  {
+    "id": "food-ingredient-tomato-slices",
+    "name": "Food Ingredient Tomato Slices",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-tomato-slices.glb",
+    "footprint": [
+      0.25,
+      0.21
+    ],
+    "height": 0.1
+  },
+  {
+    "id": "food-ingredient-tomato",
+    "name": "Food Ingredient Tomato",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-tomato.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.23
+  },
+  {
+    "id": "food-ingredient-vegetableburger-cooked",
+    "name": "Food Ingredient Vegetableburger Cooked",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-vegetableburger-cooked.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.07
+  },
+  {
+    "id": "food-ingredient-vegetableburger-uncooked",
+    "name": "Food Ingredient Vegetableburger Uncooked",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-ingredient-vegetableburger-uncooked.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.07
+  },
+  {
+    "id": "food-stew",
+    "name": "Food Stew",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-stew.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.1
+  },
+  {
+    "id": "food-vegetableburger",
+    "name": "Food Vegetableburger",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/food-vegetableburger.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.23
+  },
+  {
+    "id": "fridge-a-decorated",
+    "name": "Fridge A Decorated",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/fridge-a-decorated.glb",
+    "footprint": [
+      0.76,
+      0.85
+    ],
+    "height": 0.95
+  },
+  {
+    "id": "fridge-a",
+    "name": "Fridge A",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/fridge-a.glb",
+    "footprint": [
+      0.76,
+      0.85
+    ],
+    "height": 0.95
+  },
+  {
+    "id": "fridge-b",
+    "name": "Fridge B",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/fridge-b.glb",
+    "footprint": [
+      0.76,
+      0.85
+    ],
+    "height": 0.95
+  },
+  {
+    "id": "jar-a-large",
+    "name": "Jar A Large",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/jar-a-large.glb",
+    "footprint": [
+      0.13,
+      0.13
+    ],
+    "height": 0.2
+  },
+  {
+    "id": "jar-a-medium",
+    "name": "Jar A Medium",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/jar-a-medium.glb",
+    "footprint": [
+      0.15,
+      0.15
+    ],
+    "height": 0.2
+  },
+  {
+    "id": "jar-a-small",
+    "name": "Jar A Small",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/jar-a-small.glb",
+    "footprint": [
+      0.21,
+      0.21
+    ],
+    "height": 0.2
+  },
+  {
+    "id": "jar-b-large",
+    "name": "Jar B Large",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/jar-b-large.glb",
+    "footprint": [
+      0.13,
+      0.13
+    ],
+    "height": 0.2
+  },
+  {
+    "id": "jar-b-medium",
+    "name": "Jar B Medium",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/jar-b-medium.glb",
+    "footprint": [
+      0.15,
+      0.15
+    ],
+    "height": 0.2
+  },
+  {
+    "id": "jar-b-small",
+    "name": "Jar B Small",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/jar-b-small.glb",
+    "footprint": [
+      0.21,
+      0.21
+    ],
+    "height": 0.2
+  },
+  {
+    "id": "jar-c-large",
+    "name": "Jar C Large",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/jar-c-large.glb",
+    "footprint": [
+      0.13,
+      0.13
+    ],
+    "height": 0.2
+  },
+  {
+    "id": "jar-c-medium",
+    "name": "Jar C Medium",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/jar-c-medium.glb",
+    "footprint": [
+      0.15,
+      0.15
+    ],
+    "height": 0.2
+  },
+  {
+    "id": "jar-c-small",
+    "name": "Jar C Small",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/jar-c-small.glb",
+    "footprint": [
+      0.21,
+      0.21
+    ],
+    "height": 0.2
+  },
+  {
+    "id": "jar-d-large",
+    "name": "Jar D Large",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/jar-d-large.glb",
+    "footprint": [
+      0.13,
+      0.13
+    ],
+    "height": 0.2
+  },
+  {
+    "id": "jar-d-medium",
+    "name": "Jar D Medium",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/jar-d-medium.glb",
+    "footprint": [
+      0.15,
+      0.15
+    ],
+    "height": 0.2
+  },
+  {
+    "id": "jar-d-small",
+    "name": "Jar D Small",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/jar-d-small.glb",
+    "footprint": [
+      0.21,
+      0.21
+    ],
+    "height": 0.2
+  },
+  {
+    "id": "ketchup",
+    "name": "Ketchup",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/ketchup.glb",
+    "footprint": [
+      0.08,
+      0.08
+    ],
+    "height": 0.21
+  },
+  {
+    "id": "kitchencabinet-corner-half",
+    "name": "Kitchencabinet Corner Half",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchencabinet-corner-half.glb",
+    "footprint": [
+      0.65,
+      0.65
+    ],
+    "height": 0.33
+  },
+  {
+    "id": "kitchencabinet-corner",
+    "name": "Kitchencabinet Corner",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchencabinet-corner.glb",
+    "footprint": [
+      0.85,
+      0.85
+    ],
+    "height": 0.85
+  },
+  {
+    "id": "kitchencabinet-half",
+    "name": "Kitchencabinet Half",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchencabinet-half.glb",
+    "footprint": [
+      0.6,
+      0.31
+    ],
+    "height": 0.3
+  },
+  {
+    "id": "kitchencabinet",
+    "name": "Kitchencabinet",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchencabinet.glb",
+    "footprint": [
+      0.85,
+      0.44
+    ],
+    "height": 0.85
+  },
+  {
+    "id": "kitchencounter-innercorner-backsplash",
+    "name": "Kitchencounter Innercorner Backsplash",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchencounter-innercorner-backsplash.glb",
+    "footprint": [
+      0.9,
+      0.9
+    ],
+    "height": 0.54
+  },
+  {
+    "id": "kitchencounter-innercorner",
+    "name": "Kitchencounter Innercorner",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchencounter-innercorner.glb",
+    "footprint": [
+      0.9,
+      0.9
+    ],
+    "height": 0.45
+  },
+  {
+    "id": "kitchencounter-outercorner-backsplash",
+    "name": "Kitchencounter Outercorner Backsplash",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchencounter-outercorner-backsplash.glb",
+    "footprint": [
+      0.9,
+      0.9
+    ],
+    "height": 0.54
+  },
+  {
+    "id": "kitchencounter-outercorner",
+    "name": "Kitchencounter Outercorner",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchencounter-outercorner.glb",
+    "footprint": [
+      0.9,
+      0.9
+    ],
+    "height": 0.45
+  },
+  {
+    "id": "kitchencounter-sink-backsplash",
+    "name": "Kitchencounter Sink Backsplash",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchencounter-sink-backsplash.glb",
+    "footprint": [
+      1.27,
+      1.3
+    ],
+    "height": 1.15
+  },
+  {
+    "id": "kitchencounter-sink",
+    "name": "Kitchencounter Sink",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchencounter-sink.glb",
+    "footprint": [
+      1.27,
+      1.3
+    ],
+    "height": 1.15
+  },
+  {
+    "id": "kitchencounter-straight-a-backsplash",
+    "name": "Kitchencounter Straight A Backsplash",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchencounter-straight-a-backsplash.glb",
+    "footprint": [
+      1.27,
+      1.3
+    ],
+    "height": 0.76
+  },
+  {
+    "id": "kitchencounter-straight-a-decorated",
+    "name": "Kitchencounter Straight A Decorated",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchencounter-straight-a-decorated.glb",
+    "footprint": [
+      1.15,
+      1.3
+    ],
+    "height": 1.2
+  },
+  {
+    "id": "kitchencounter-straight-a",
+    "name": "Kitchencounter Straight A",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchencounter-straight-a.glb",
+    "footprint": [
+      1.27,
+      1.3
+    ],
+    "height": 0.64
+  },
+  {
+    "id": "kitchencounter-straight-b-backsplash",
+    "name": "Kitchencounter Straight B Backsplash",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchencounter-straight-b-backsplash.glb",
+    "footprint": [
+      1.27,
+      1.3
+    ],
+    "height": 0.76
+  },
+  {
+    "id": "kitchencounter-straight-b",
+    "name": "Kitchencounter Straight B",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchencounter-straight-b.glb",
+    "footprint": [
+      1.27,
+      1.3
+    ],
+    "height": 0.64
+  },
+  {
+    "id": "kitchencounter-straight-decorated",
+    "name": "Kitchencounter Straight Decorated",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchencounter-straight-decorated.glb",
+    "footprint": [
+      1.27,
+      1.3
+    ],
+    "height": 1.22
+  },
+  {
+    "id": "kitchentable-a-large-decorated",
+    "name": "Kitchentable A Large Decorated",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchentable-a-large-decorated.glb",
+    "footprint": [
+      1.17,
+      0.78
+    ],
+    "height": 0.75
+  },
+  {
+    "id": "kitchentable-a-large",
+    "name": "Kitchentable A Large",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchentable-a-large.glb",
+    "footprint": [
+      2.24,
+      1.49
+    ],
+    "height": 0.75
+  },
+  {
+    "id": "kitchentable-a",
+    "name": "Kitchentable A",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchentable-a.glb",
+    "footprint": [
+      1.49,
+      1.49
+    ],
+    "height": 0.75
+  },
+  {
+    "id": "kitchentable-b-large",
+    "name": "Kitchentable B Large",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchentable-b-large.glb",
+    "footprint": [
+      2.24,
+      1.49
+    ],
+    "height": 0.75
+  },
+  {
+    "id": "kitchentable-b",
+    "name": "Kitchentable B",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchentable-b.glb",
+    "footprint": [
+      1.49,
+      1.49
+    ],
+    "height": 0.75
+  },
+  {
+    "id": "kitchentable-sink-large-decorated",
+    "name": "Kitchentable Sink Large Decorated",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchentable-sink-large-decorated.glb",
+    "footprint": [
+      1.39,
+      0.92
+    ],
+    "height": 0.9
+  },
+  {
+    "id": "kitchentable-sink-large",
+    "name": "Kitchentable Sink Large",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchentable-sink-large.glb",
+    "footprint": [
+      1.5,
+      1
+    ],
+    "height": 0.9
+  },
+  {
+    "id": "kitchentable-sink",
+    "name": "Kitchentable Sink",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/kitchentable-sink.glb",
+    "footprint": [
+      1,
+      1
+    ],
+    "height": 0.9
+  },
+  {
+    "id": "knife",
+    "name": "Knife",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/knife.glb",
+    "footprint": [
+      0.08,
+      0.03
+    ],
+    "height": 0.37
+  },
+  {
+    "id": "lid-a",
+    "name": "Lid A",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/lid-a.glb",
+    "footprint": [
+      0.3,
+      0.3
+    ],
+    "height": 0.06
+  },
+  {
+    "id": "lid-b",
+    "name": "Lid B",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/lid-b.glb",
+    "footprint": [
+      0.3,
+      0.3
+    ],
+    "height": 0.06
+  },
+  {
+    "id": "lid-large",
+    "name": "Lid Large",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/lid-large.glb",
+    "footprint": [
+      0.3,
+      0.24
+    ],
+    "height": 0.06
+  },
+  {
+    "id": "menu",
+    "name": "Menu",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-restaurant/menu.glb",
+    "footprint": [
+      0.62,
+      0.38
+    ],
+    "height": 1
+  },
+  {
+    "id": "mustard",
+    "name": "Mustard",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/mustard.glb",
+    "footprint": [
+      0.08,
+      0.08
+    ],
+    "height": 0.21
+  },
+  {
+    "id": "oven",
+    "name": "Oven",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/oven.glb",
+    "footprint": [
+      0.64,
+      0.75
+    ],
+    "height": 0.65
+  },
+  {
+    "id": "pan-006",
+    "name": "Pan 006",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/pan-006.glb",
+    "footprint": [
+      0.25,
+      0.42
+    ],
+    "height": 0.12
+  },
+  {
+    "id": "pan-a",
+    "name": "Pan A",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/pan-a.glb",
+    "footprint": [
+      0.28,
+      0.42
+    ],
+    "height": 0.07
+  },
+  {
+    "id": "pan-b",
+    "name": "Pan B",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/pan-b.glb",
+    "footprint": [
+      0.28,
+      0.42
+    ],
+    "height": 0.07
+  },
+  {
+    "id": "papertowel",
+    "name": "Papertowel",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/papertowel.glb",
+    "footprint": [
+      0.15,
+      0.15
+    ],
+    "height": 0.28
+  },
+  {
+    "id": "pillar-a",
+    "name": "Pillar A",
+    "brand": "KAYKIT",
+    "type": "OTHER",
+    "file": "/models/kaykit-restaurant/pillar-a.glb",
+    "footprint": [
+      0.4,
+      0.4
+    ],
+    "height": 2.7
+  },
+  {
+    "id": "pillar-b",
+    "name": "Pillar B",
+    "brand": "KAYKIT",
+    "type": "OTHER",
+    "file": "/models/kaykit-restaurant/pillar-b.glb",
+    "footprint": [
+      0.66,
+      0.66
+    ],
+    "height": 2.7
+  },
+  {
+    "id": "plate-dirty",
+    "name": "Plate Dirty",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/plate-dirty.glb",
+    "footprint": [
+      0.26,
+      0.26
+    ],
+    "height": 0.03
+  },
+  {
+    "id": "plate-small",
+    "name": "Plate Small",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/plate-small.glb",
+    "footprint": [
+      0.2,
+      0.2
+    ],
+    "height": 0.03
+  },
+  {
+    "id": "plate",
+    "name": "Plate",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/plate.glb",
+    "footprint": [
+      0.26,
+      0.26
+    ],
+    "height": 0.03
+  },
+  {
+    "id": "pot-a-stew",
+    "name": "Pot A Stew",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/pot-a-stew.glb",
+    "footprint": [
+      0.32,
+      0.23
+    ],
+    "height": 0.12
+  },
+  {
+    "id": "pot-a",
+    "name": "Pot A",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/pot-a.glb",
+    "footprint": [
+      0.32,
+      0.23
+    ],
+    "height": 0.11
+  },
+  {
+    "id": "pot-b-stew",
+    "name": "Pot B Stew",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/pot-b-stew.glb",
+    "footprint": [
+      0.32,
+      0.23
+    ],
+    "height": 0.12
+  },
+  {
+    "id": "pot-b",
+    "name": "Pot B",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/pot-b.glb",
+    "footprint": [
+      0.32,
+      0.23
+    ],
+    "height": 0.11
+  },
+  {
+    "id": "pot-large",
+    "name": "Pot Large",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/pot-large.glb",
+    "footprint": [
+      0.42,
+      0.25
+    ],
+    "height": 0.16
+  },
+  {
+    "id": "shelf-papertowel-decorated",
+    "name": "Shelf Papertowel Decorated",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-restaurant/shelf-papertowel-decorated.glb",
+    "footprint": [
+      0.35,
+      0.11
+    ],
+    "height": 0.3
+  },
+  {
+    "id": "shelf-papertowel",
+    "name": "Shelf Papertowel",
+    "brand": "KAYKIT",
+    "type": "STORAGE",
+    "file": "/models/kaykit-restaurant/shelf-papertowel.glb",
+    "footprint": [
+      0.57,
+      0.17
+    ],
+    "height": 0.3
+  },
+  {
+    "id": "stew-bowl",
+    "name": "Stew Bowl",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/stew-bowl.glb",
+    "footprint": [
+      0.25,
+      0.25
+    ],
+    "height": 0.08
+  },
+  {
+    "id": "stew-pot",
+    "name": "Stew Pot",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/stew-pot.glb",
+    "footprint": [
+      0.32,
+      0.32
+    ],
+    "height": 0.11
+  },
+  {
+    "id": "stove-multi-countertop",
+    "name": "Stove Multi Countertop",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/stove-multi-countertop.glb",
+    "footprint": [
+      0.75,
+      0.75
+    ],
+    "height": 0.12
+  },
+  {
+    "id": "stove-multi-decorated",
+    "name": "Stove Multi Decorated",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/stove-multi-decorated.glb",
+    "footprint": [
+      0.72,
+      0.75
+    ],
+    "height": 0.56
+  },
+  {
+    "id": "stove-multi",
+    "name": "Stove Multi",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/stove-multi.glb",
+    "footprint": [
+      0.66,
+      0.75
+    ],
+    "height": 0.39
+  },
+  {
+    "id": "stove-single-countertop",
+    "name": "Stove Single Countertop",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/stove-single-countertop.glb",
+    "footprint": [
+      0.75,
+      0.75
+    ],
+    "height": 0.12
+  },
+  {
+    "id": "stove-single",
+    "name": "Stove Single",
+    "brand": "KAYKIT",
+    "type": "KITCHEN",
+    "file": "/models/kaykit-restaurant/stove-single.glb",
+    "footprint": [
+      0.66,
+      0.75
+    ],
+    "height": 0.4
+  },
+  {
+    "id": "table-round-a-decorated",
+    "name": "Table Round A Decorated",
+    "brand": "KAYKIT",
+    "type": "TABLES",
+    "file": "/models/kaykit-restaurant/table-round-a-decorated.glb",
+    "footprint": [
+      1.21,
+      1.21
+    ],
+    "height": 0.75
+  },
+  {
+    "id": "table-round-a-small-decorated",
+    "name": "Table Round A Small Decorated",
+    "brand": "KAYKIT",
+    "type": "TABLES",
+    "file": "/models/kaykit-restaurant/table-round-a-small-decorated.glb",
+    "footprint": [
+      0.62,
+      0.62
+    ],
+    "height": 0.75
+  },
+  {
+    "id": "table-round-a-small",
+    "name": "Table Round A Small",
+    "brand": "KAYKIT",
+    "type": "TABLES",
+    "file": "/models/kaykit-restaurant/table-round-a-small.glb",
+    "footprint": [
+      1.13,
+      1.13
+    ],
+    "height": 0.75
+  },
+  {
+    "id": "table-round-a",
+    "name": "Table Round A",
+    "brand": "KAYKIT",
+    "type": "TABLES",
+    "file": "/models/kaykit-restaurant/table-round-a.glb",
+    "footprint": [
+      2.25,
+      2.25
+    ],
+    "height": 0.75
+  },
+  {
+    "id": "table-round-b",
+    "name": "Table Round B",
+    "brand": "KAYKIT",
+    "type": "TABLES",
+    "file": "/models/kaykit-restaurant/table-round-b.glb",
+    "footprint": [
+      2.25,
+      2.25
+    ],
+    "height": 0.75
+  },
+  {
+    "id": "towelrail",
+    "name": "Towelrail",
+    "brand": "KAYKIT",
+    "type": "BATHROOM",
+    "file": "/models/kaykit-restaurant/towelrail.glb",
+    "footprint": [
+      0.6,
+      0.17
+    ],
+    "height": 0.22
+  },
+  {
+    "id": "wall-decorated",
+    "name": "Wall Decorated",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-restaurant/wall-decorated.glb",
+    "footprint": [
+      2,
+      1.45
+    ],
+    "height": 2
+  },
+  {
+    "id": "wall-doorway-2",
+    "name": "Wall Doorway 2",
+    "brand": "KAYKIT",
+    "type": "OTHER",
+    "file": "/models/kaykit-restaurant/wall-doorway.glb",
+    "footprint": [
+      2,
+      0.25
+    ],
+    "height": 2
+  },
+  {
+    "id": "wall-half-2",
+    "name": "Wall Half 2",
+    "brand": "KAYKIT",
+    "type": "OTHER",
+    "file": "/models/kaykit-restaurant/wall-half.glb",
+    "footprint": [
+      2,
+      0.5
+    ],
+    "height": 4
+  },
+  {
+    "id": "wall-orderwindow-decorated",
+    "name": "Wall Orderwindow Decorated",
+    "brand": "KAYKIT",
+    "type": "DECOR",
+    "file": "/models/kaykit-restaurant/wall-orderwindow-decorated.glb",
+    "footprint": [
+      2,
+      0.45
+    ],
+    "height": 2
+  },
+  {
+    "id": "wall-orderwindow",
+    "name": "Wall Orderwindow",
+    "brand": "KAYKIT",
+    "type": "OTHER",
+    "file": "/models/kaykit-restaurant/wall-orderwindow.glb",
+    "footprint": [
+      2,
+      0.45
+    ],
+    "height": 2
+  },
+  {
+    "id": "wall-window-closed",
+    "name": "Wall Window Closed",
+    "brand": "KAYKIT",
+    "type": "OTHER",
+    "file": "/models/kaykit-restaurant/wall-window-closed.glb",
+    "footprint": [
+      2,
+      0.25
+    ],
+    "height": 2
+  },
+  {
+    "id": "wall-window-open",
+    "name": "Wall Window Open",
+    "brand": "KAYKIT",
+    "type": "OTHER",
+    "file": "/models/kaykit-restaurant/wall-window-open.glb",
+    "footprint": [
+      2,
+      0.25
+    ],
+    "height": 2
+  },
+  {
+    "id": "wall-2",
+    "name": "Wall 2",
+    "brand": "KAYKIT",
+    "type": "OTHER",
+    "file": "/models/kaykit-restaurant/wall.glb",
+    "footprint": [
+      2,
+      0.25
+    ],
+    "height": 2
+  }
+]

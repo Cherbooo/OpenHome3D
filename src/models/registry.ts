@@ -1,0 +1,470 @@
+import manifest from '../assets/manifest.json'
+
+/** Parameter descriptor for parametric (built-in) models. */
+export interface ParamSpec {
+  key: string
+  label: string
+  kind: 'number' | 'boolean'
+  min?: number
+  max?: number
+  step?: number
+  default: number | boolean
+}
+
+export type FurnitureType =
+  | 'BEDS'
+  | 'SEATING'
+  | 'LIGHTING'
+  | 'TABLES'
+  | 'STORAGE'
+  | 'KITCHEN'
+  | 'BATHROOM'
+  | 'DECOR'
+  | 'OTHER'
+
+export type Brand = 'BUILT-IN' | 'KENNEY' | 'KAYKIT' | 'MY UPLOADS'
+
+/** Unified model description: built-in parametrics, manifest GLBs and user uploads. */
+export interface ModelDef {
+  id: string
+  name: string
+  brand: Brand
+  type: FurnitureType
+  kind: 'parametric' | 'glb' | 'upload'
+  file?: string // glb/upload
+  footprint: [number, number] // default w×d meters for layout
+  height?: number
+  params?: ParamSpec[] // parametric only
+  mount?: 'floor' | 'wall' | 'ceiling'
+}
+
+/**
+ * A piece of furniture placed in a room. Position is x/z meters, ROOM-LOCAL:
+ * the center of the owning room (RoomDef.rect) is [0,0].
+ */
+export interface FurnitureInstance {
+  id: string // nanoid-ish; layout-generated ids are room-prefixed ("r1:f3")
+  roomId: string // RoomDef.id of the owning room ('' inside the layout engine)
+  modelId: string // registry id, e.g. "builtin:sofa", "kenney:lounge-sofa", "upload:<uuid>"
+  label: string // display name
+  position: [number, number] // x,z meters, room center = [0,0]
+  rotationY: number // radians
+  params: Record<string, number | boolean> // parametric values (empty for GLB)
+  scale: number // default 1
+}
+
+// ---------------------------------------------------------------------------
+// Built-in parametric models
+// ---------------------------------------------------------------------------
+
+/** Bilingual display labels for parametric param keys (keys themselves stay English). */
+const PARAM_LABELS: Record<string, string> = {
+  Width: '宽度 Width',
+  Depth: '深度 Depth',
+  Height: '高度 Height',
+  Seats: '座位数 Seats',
+  Arms: '扶手 Arms',
+  Rounded: '圆角 Rounded',
+  Headboard: '床头板 Headboard',
+  Doors: '门数 Doors',
+  Drawers: '抽屉 Drawers',
+  Tripod: '三脚架 Tripod',
+  Cone: '锥形灯罩 Cone shade',
+  Drop: '吊线 Drop',
+  Size: '尺寸 Size',
+  Levels: '层数 Levels',
+}
+
+const num = (
+  key: string,
+  label: string,
+  min: number,
+  max: number,
+  def: number,
+  step = 0.01,
+): ParamSpec => ({ key, label: PARAM_LABELS[key] ?? label, kind: 'number', min, max, step, default: def })
+
+const bool = (key: string, label: string, def: boolean): ParamSpec => ({
+  key,
+  label: PARAM_LABELS[key] ?? label,
+  kind: 'boolean',
+  default: def,
+})
+
+export const BUILTIN_MODELS: ModelDef[] = [
+  {
+    id: 'builtin:sofa',
+    name: 'Sofa',
+    brand: 'BUILT-IN',
+    type: 'SEATING',
+    kind: 'parametric',
+    footprint: [2.3, 0.92],
+    height: 0.82,
+    params: [
+      num('Width', 'Width', 1.6, 3.6, 2.3, 0.05),
+      num('Depth', 'Depth', 0.8, 1.1, 0.92),
+      num('Seats', 'Seats', 1, 5, 3, 1),
+      bool('Arms', 'Arms', true),
+      bool('Rounded', 'Rounded', true),
+    ],
+  },
+  {
+    id: 'builtin:armchair',
+    name: 'Armchair',
+    brand: 'BUILT-IN',
+    type: 'SEATING',
+    kind: 'parametric',
+    footprint: [0.94, 0.92],
+    height: 0.82,
+    params: [
+      num('Width', 'Width', 0.7, 1.2, 0.94, 0.02),
+      num('Depth', 'Depth', 0.8, 1.1, 0.92),
+      bool('Arms', 'Arms', true),
+      bool('Rounded', 'Rounded', true),
+    ],
+  },
+  {
+    id: 'builtin:coffee-table',
+    name: 'Coffee table',
+    brand: 'BUILT-IN',
+    type: 'TABLES',
+    kind: 'parametric',
+    footprint: [1.2, 0.6],
+    height: 0.4,
+    params: [
+      num('Width', 'Width', 0.9, 1.6, 1.2, 0.05),
+      num('Depth', 'Depth', 0.5, 0.8, 0.6, 0.05),
+      num('Height', 'Height', 0.3, 0.5, 0.4),
+    ],
+  },
+  {
+    id: 'builtin:side-table',
+    name: 'Side table',
+    brand: 'BUILT-IN',
+    type: 'TABLES',
+    kind: 'parametric',
+    footprint: [0.5, 0.5],
+    height: 0.55,
+    params: [
+      num('Width', 'Width', 0.4, 0.7, 0.5, 0.05),
+      num('Depth', 'Depth', 0.4, 0.7, 0.5, 0.05),
+      num('Height', 'Height', 0.4, 0.7, 0.55),
+    ],
+  },
+  {
+    id: 'builtin:dining-table',
+    name: 'Dining table',
+    brand: 'BUILT-IN',
+    type: 'TABLES',
+    kind: 'parametric',
+    footprint: [1.6, 0.9],
+    height: 0.74,
+    params: [
+      num('Width', 'Width', 1.2, 2.2, 1.6, 0.05),
+      num('Depth', 'Depth', 0.8, 1.1, 0.9, 0.05),
+      num('Height', 'Height', 0.7, 0.78, 0.74),
+    ],
+  },
+  {
+    id: 'builtin:chair',
+    name: 'Chair',
+    brand: 'BUILT-IN',
+    type: 'SEATING',
+    kind: 'parametric',
+    footprint: [0.46, 0.48],
+    height: 0.9,
+    params: [
+      num('Width', 'Width', 0.4, 0.55, 0.46, 0.02),
+      num('Depth', 'Depth', 0.4, 0.55, 0.48, 0.02),
+    ],
+  },
+  {
+    id: 'builtin:stool',
+    name: 'Stool',
+    brand: 'BUILT-IN',
+    type: 'SEATING',
+    kind: 'parametric',
+    footprint: [0.36, 0.36],
+    height: 0.45,
+    params: [num('Size', 'Size', 0.3, 0.45, 0.36, 0.02)],
+  },
+  {
+    id: 'builtin:bed',
+    name: 'Bed',
+    brand: 'BUILT-IN',
+    type: 'BEDS',
+    kind: 'parametric',
+    footprint: [1.6, 2.05],
+    height: 0.95,
+    params: [
+      num('Width', 'Width', 1.2, 2.0, 1.6, 0.1),
+      num('Depth', 'Depth', 1.9, 2.2, 2.05, 0.05),
+      bool('Headboard', 'Headboard', true),
+    ],
+  },
+  {
+    id: 'builtin:wardrobe',
+    name: 'Wardrobe',
+    brand: 'BUILT-IN',
+    type: 'STORAGE',
+    kind: 'parametric',
+    footprint: [1.4, 0.6],
+    height: 2.1,
+    params: [
+      num('Width', 'Width', 0.8, 2.4, 1.4, 0.1),
+      num('Depth', 'Depth', 0.5, 0.7, 0.6, 0.05),
+      num('Height', 'Height', 1.8, 2.4, 2.1, 0.05),
+      num('Doors', 'Doors', 1, 3, 2, 1),
+    ],
+  },
+  {
+    id: 'builtin:tv-bench',
+    name: 'TV bench',
+    brand: 'BUILT-IN',
+    type: 'STORAGE',
+    kind: 'parametric',
+    footprint: [1.4, 0.42],
+    height: 0.45,
+    params: [
+      num('Width', 'Width', 1.0, 2.0, 1.4, 0.1),
+      num('Depth', 'Depth', 0.35, 0.5, 0.42, 0.02),
+      num('Height', 'Height', 0.35, 0.55, 0.45, 0.05),
+      num('Drawers', 'Drawers', 1, 3, 2, 1),
+    ],
+  },
+  {
+    id: 'builtin:tv',
+    name: 'TV',
+    brand: 'BUILT-IN',
+    type: 'DECOR',
+    kind: 'parametric',
+    footprint: [1.1, 0.25],
+    height: 0.75,
+    params: [num('Width', 'Width', 0.7, 1.6, 1.1, 0.05)],
+  },
+  {
+    id: 'builtin:floor-lamp',
+    name: 'Floor lamp',
+    brand: 'BUILT-IN',
+    type: 'LIGHTING',
+    kind: 'parametric',
+    footprint: [0.35, 0.35],
+    height: 1.6,
+    params: [
+      num('Height', 'Height', 1.3, 1.9, 1.6, 0.05),
+      bool('Tripod', 'Tripod', false),
+      bool('Cone', 'Cone shade', false),
+    ],
+  },
+  {
+    id: 'builtin:table-lamp',
+    name: 'Table lamp',
+    brand: 'BUILT-IN',
+    type: 'LIGHTING',
+    kind: 'parametric',
+    footprint: [0.25, 0.25],
+    height: 0.4,
+    params: [
+      num('Height', 'Height', 0.3, 0.5, 0.4, 0.05),
+      bool('Cone', 'Cone shade', false),
+    ],
+  },
+  {
+    id: 'builtin:pendant',
+    name: 'Pendant lamp',
+    brand: 'BUILT-IN',
+    type: 'LIGHTING',
+    kind: 'parametric',
+    footprint: [0.3, 0.3],
+    height: 0.9,
+    mount: 'ceiling',
+    params: [
+      num('Drop', 'Drop', 0.4, 1.2, 0.7, 0.05),
+      bool('Cone', 'Cone shade', true),
+    ],
+  },
+  {
+    id: 'builtin:rug',
+    name: 'Rug',
+    brand: 'BUILT-IN',
+    type: 'DECOR',
+    kind: 'parametric',
+    footprint: [2.0, 1.4],
+    height: 0.02,
+    params: [
+      num('Width', 'Width', 1.2, 3.0, 2.0, 0.1),
+      num('Depth', 'Depth', 0.8, 2.2, 1.4, 0.1),
+      bool('Rounded', 'Rounded', true),
+    ],
+  },
+  {
+    id: 'builtin:plant',
+    name: 'Plant',
+    brand: 'BUILT-IN',
+    type: 'DECOR',
+    kind: 'parametric',
+    footprint: [0.4, 0.4],
+    height: 0.75,
+    params: [num('Size', 'Size', 0.4, 1.2, 0.7, 0.05)],
+  },
+  {
+    id: 'builtin:shelf',
+    name: 'Shelf',
+    brand: 'BUILT-IN',
+    type: 'STORAGE',
+    kind: 'parametric',
+    footprint: [0.9, 0.32],
+    height: 1.8,
+    params: [
+      num('Width', 'Width', 0.6, 1.4, 0.9, 0.05),
+      num('Height', 'Height', 1.2, 2.2, 1.8, 0.1),
+      num('Levels', 'Levels', 2, 5, 4, 1),
+    ],
+  },
+  {
+    id: 'builtin:desk',
+    name: 'Desk',
+    brand: 'BUILT-IN',
+    type: 'TABLES',
+    kind: 'parametric',
+    footprint: [1.3, 0.65],
+    height: 0.74,
+    params: [
+      num('Width', 'Width', 1.0, 1.8, 1.3, 0.05),
+      num('Depth', 'Depth', 0.5, 0.8, 0.65, 0.05),
+      num('Height', 'Height', 0.7, 0.78, 0.74),
+    ],
+  },
+]
+
+// ---------------------------------------------------------------------------
+// Manifest GLB models (Kenney / KayKit)
+// ---------------------------------------------------------------------------
+
+interface ManifestEntry {
+  id: string
+  name: string
+  brand: 'KENNEY' | 'KAYKIT'
+  type: FurnitureType
+  file: string
+  /** real-world size from scripts/size-rules.mjs (optional) */
+  footprint?: [number, number]
+  height?: number
+  mount?: 'floor' | 'ceiling'
+}
+
+/** Generic per-type footprint estimates for GLB models (meters). */
+const TYPE_FOOTPRINTS: Record<FurnitureType, [number, number]> = {
+  BEDS: [1.7, 2.1],
+  SEATING: [0.75, 0.75],
+  LIGHTING: [0.35, 0.35],
+  TABLES: [0.9, 0.7],
+  STORAGE: [0.9, 0.5],
+  KITCHEN: [0.65, 0.65],
+  BATHROOM: [0.7, 0.75],
+  DECOR: [0.4, 0.4],
+  OTHER: [0.6, 0.6],
+}
+
+/** More precise footprints for GLB models the layout engine anchors on. */
+const FOOTPRINT_OVERRIDES: Record<string, [number, number]> = {
+  'kenney:kitchen-cabinet': [0.62, 0.62],
+  'kenney:kitchen-cabinet-drawer': [0.62, 0.62],
+  'kenney:kitchen-sink': [0.62, 0.62],
+  'kenney:kitchen-stove': [0.62, 0.62],
+  'kenney:kitchen-fridge': [0.68, 0.68],
+  'kenney:toilet': [0.5, 0.72],
+  'kenney:toilet-square': [0.5, 0.72],
+  'kenney:bathtub': [1.65, 0.78],
+  'kenney:shower': [0.95, 0.95],
+  'kenney:bathroom-sink': [0.58, 0.5],
+  'kenney:bathroom-sink-square': [0.58, 0.5],
+  'kenney:washer': [0.64, 0.64],
+  'kenney:dryer': [0.64, 0.64],
+  'kenney:potted-plant': [0.35, 0.35],
+}
+
+const GLB_MODELS: ModelDef[] = (manifest as ManifestEntry[]).map((e) => {
+  const id = `${e.brand.toLowerCase()}:${e.id}`
+  return {
+    id,
+    name: e.name,
+    brand: e.brand,
+    type: e.type,
+    kind: 'glb' as const,
+    file: e.file,
+    // manifest carries real-world sizes (size-rules.mjs); estimates are fallback
+    footprint: e.footprint ?? FOOTPRINT_OVERRIDES[id] ?? TYPE_FOOTPRINTS[e.type],
+    height: e.height,
+    mount: e.mount ?? ('floor' as const),
+  }
+})
+
+// ---------------------------------------------------------------------------
+// Registry
+// ---------------------------------------------------------------------------
+
+const uploads = new Map<string, ModelDef>()
+
+function byId(models: ModelDef[]): Map<string, ModelDef> {
+  const m = new Map<string, ModelDef>()
+  for (const def of models) m.set(def.id, def)
+  return m
+}
+
+const STATIC_MODELS: ModelDef[] = [...BUILTIN_MODELS, ...GLB_MODELS]
+const STATIC_BY_ID = byId(STATIC_MODELS)
+
+/** Look up a model by registry id (builtin / manifest / upload). */
+export function getModel(id: string): ModelDef | undefined {
+  return STATIC_BY_ID.get(id) ?? uploads.get(id)
+}
+
+/** All registered models: built-ins, manifest GLBs, then uploads. */
+export function allModels(): ModelDef[] {
+  return [...STATIC_MODELS, ...uploads.values()]
+}
+
+/** All registered models grouped by brand (order: BUILT-IN, KENNEY, KAYKIT, MY UPLOADS). */
+export function modelsByBrand(): Record<Brand, ModelDef[]> {
+  const out: Record<Brand, ModelDef[]> = {
+    'BUILT-IN': [],
+    KENNEY: [],
+    KAYKIT: [],
+    'MY UPLOADS': [],
+  }
+  for (const m of allModels()) out[m.brand].push(m)
+  return out
+}
+
+/** Register a user-uploaded model definition. */
+export function registerUpload(def: ModelDef): void {
+  uploads.set(def.id, def)
+}
+
+/** Remove a user-uploaded model by id. */
+export function removeUpload(id: string): void {
+  uploads.delete(id)
+}
+
+/**
+ * Effective layout footprint of a model instance. Parametric models with
+ * Width/Depth params report those; everything else reports def.footprint.
+ * Scale multiplies both axes.
+ */
+export function footprintOf(
+  def: ModelDef,
+  params?: Record<string, number | boolean>,
+  scale = 1,
+): [number, number] {
+  const w = typeof params?.Width === 'number' ? (params.Width as number) : def.footprint[0]
+  const d = typeof params?.Depth === 'number' ? (params.Depth as number) : def.footprint[1]
+  return [w * scale, d * scale]
+}
+
+/** Default param values for a parametric model (empty record for GLBs). */
+export function defaultParams(def: ModelDef): Record<string, number | boolean> {
+  const out: Record<string, number | boolean> = {}
+  for (const p of def.params ?? []) out[p.key] = p.default
+  return out
+}
