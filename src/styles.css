@@ -106,6 +106,12 @@ body.sidebar-collapsed .app-canvas {
   border-bottom: 2px solid var(--ink);
 }
 
+/* GitHub repo link pinned to the header's right edge */
+.sb-github {
+  margin-left: auto;
+  text-decoration: none;
+}
+
 .sb-logo {
   width: 26px;
   height: 26px;
