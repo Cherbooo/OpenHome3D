@@ -2,6 +2,7 @@
   <img src="public/brand/logo-static.png" alt="OpenHome3D logo" width="72" />
   <h1>OpenHome3D</h1>
   <p><strong>A cartoon-style 3D home designer that runs entirely in your browser.</strong></p>
+  <p><a href="https://yuyou-dev.github.io/OpenHome3D/"><strong>▶ Live demo — yuyou-dev.github.io/OpenHome3D</strong></a></p>
   <p>Type a seed, get a fully furnished room in one click — rendered in flat cel-shaded colors with ink outlines, wrapped in a Neo-Brutalism UI. No backend, no accounts, no API keys.</p>
   <p>
     <a href="#features">Features</a> ·

@@ -25,6 +25,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:pages": "tsc && vite build --base=/OpenHome3D/",
     "preview": "vite preview",
     "smoke": "tsx scripts/smoke-gen.ts",
     "smoke:ui": "node scripts/smoke-ui.mjs",
