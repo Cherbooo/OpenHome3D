@@ -8,7 +8,7 @@ OpenHome3D 是「家居生成器 Cartoon」的开源版:**仅单间**、**彩色
 
 - 改完必须 `npm run build`(tsc 严格模式,`noUnusedLocals`)零错误
 - 布局引擎改动后跑 `npm run smoke`(确定性/越界/碰撞/门洞避让 146 项)
-- 界面冒烟:`npm run smoke:ui`(需 dev server 在线,无头 Chrome 截图并打印控制台错误,有错误退出码 1 可作回归门;`APP_URL`/`SHOT`/`ACTIONS`/`CHROME_PATH` 环境变量控制,`ACTIONS=shuffle` 覆盖换一换)
+- 界面冒烟:`npm run smoke:ui`(需 dev server 在线,无头 Chrome 截图并打印控制台错误,有错误退出码 1 可作回归门;`APP_URL`/`SHOT`/`ACTIONS`/`CHROME_PATH` 环境变量控制,`ACTIONS=shuffle` 覆盖换一换,`ACTIONS=openings-bounds` 覆盖调整房间尺寸后的门窗越界回归)
 - UI 溢出审计:`npm run audit:ui`(10 状态 × 2 视口,有 finding 退出码 1,可作回归门;`SHOT_DIR=dir` 逐状态截图)
 - dev server 用随机高端口(`.port` 缓存,`scripts/pick-port.mjs`),不要写死端口
 - **GitHub Pages**:推送到 main 即自动部署(`.github/workflows/pages.yml`,构建用 `npm run build:pages` = `vite build --base=/OpenHome3D/`)。**凡是引用静态资源的 URL 必须走 `import.meta.env.BASE_URL` 前缀**(注册表 GLB 路径、品牌图),禁止手写 `/models/...`、`/brand/...` 绝对路径,否则子路径部署会 404

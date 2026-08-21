@@ -254,9 +254,15 @@ export const useStore = create<HGState>()(
         const rooms = s.home.rooms.map((r) => (r.id === roomId ? candidate : r))
         // w/d change → regenerate that room; x/z move keeps room-local furniture as-is
         const dimsChanged = nextRect.w !== room.rect.w || nextRect.d !== room.rect.d
+        // resized walls can strand openings: re-clamp this room's into their spans
+        const nextHome: HomeDef = { ...s.home, rooms }
+        const openings = dimsChanged
+          ? s.home.openings.map((o) => (o.a === roomId ? clampOpeningToWall(nextHome, o) : o))
+          : s.home.openings
+        const home: HomeDef = { ...nextHome, openings }
         set({
-          home: { ...s.home, rooms },
-          ...(dimsChanged ? { furniture: regenRoom(s, candidate, { ...s.home, rooms }) } : {}),
+          home,
+          ...(dimsChanged ? { furniture: regenRoom(s, candidate, home) } : {}),
         })
       },
 
@@ -360,7 +366,6 @@ export const useStore = create<HGState>()(
       },
 
       setStructure: (partial) => set(partial),
-
       setExtras: (n) => {
         const extras = Math.max(0, Math.min(100, Math.round(n)))
         const s = get()

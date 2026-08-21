@@ -3,7 +3,7 @@ import puppeteer from 'puppeteer-core'
 
 const url = process.env.APP_URL || 'http://127.0.0.1:59683/'
 const out = process.env.SHOT || '/tmp/openhome3d.png'
-const actions = process.env.ACTIONS || '' // e.g. "select-first" | "open-add" | "shuffle" | "new-room" | "loading-veil"
+const actions = process.env.ACTIONS || '' // e.g. "select-first" | "open-add" | "shuffle" | "new-room" | "loading-veil" | "openings-bounds"
 const chromePath =
   process.env.CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 
@@ -116,6 +116,10 @@ if (actions.includes('furniture-bounds')) {
   const failures = await checkFurnitureBounds()
   failures.forEach((failure) => errors.push(`BOUNDS: ${failure}`))
 }
+if (actions.includes('openings-bounds')) {
+  const failures = await checkOpeningsBounds()
+  failures.forEach((failure) => errors.push(`OPENINGS: ${failure}`))
+}
 
 await page.screenshot({ path: out })
 console.log('SCREENSHOT', out)
@@ -123,6 +127,33 @@ console.log('CONSOLE ERRORS:', errors.length)
 errors.slice(0, 12).forEach((e) => console.log(' -', e))
 await browser.close()
 if (errors.length) process.exitCode = 1
+
+// Regression for issue #4: after resizing a room, every retained opening
+// must still fit inside its wall span.
+async function checkOpeningsBounds() {
+  return page.evaluate(() => {
+    const store = window.__store
+    const failures = []
+    const assertAllFit = (label) => {
+      const { home } = store.getState()
+      const rect = home.rooms[0].rect
+      const spanFor = (side) => (side === 'n' || side === 's' ? rect.w : rect.d)
+      for (const o of home.openings) {
+        const span = spanFor(o.side)
+        if (o.offset - o.width / 2 < -1e-9 || o.offset + o.width / 2 > span + 1e-9) {
+          failures.push(`${label}: ${o.side} ${o.kind} offset=${o.offset} width=${o.width} span=${span}`)
+        }
+      }
+    }
+    const room = store.getState().home.rooms[0]
+    store.getState().setRoomRect(room.id, { ...room.rect, w: 1.5 })
+    store.getState().setRoomRect(room.id, { ...room.rect, w: 1.5, d: 1.5 })
+    assertAllFit('shrink 1.5x1.5')
+    store.getState().setRoomRect(room.id, { ...room.rect, w: 12, d: 12 })
+    assertAllFit('grow 12x12')
+    return failures
+  })
+}
 
 async function checkFurnitureBounds() {
   return page.evaluate(() => {

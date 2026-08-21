@@ -269,10 +269,10 @@ export default function Home() {
 
             {/* window frames + glass in the wall's local frame; glass gets no
                 edges/shadows and hides with its wall via the group ref */}
-            {wins.map((win) => {
+            {wins.map((win, k) => {
               const h = win.top - SILL
               return (
-                <group key={win.u} position={[win.u, 0, 0]}>
+                <group key={`${win.u}:${k}`} position={[win.u, 0, 0]}>
                   <WallMesh
                     args={[0.05, h, WALL_T + 0.02]}
                     position={[-(win.w / 2 - 0.025), SILL + h / 2, 0]}
