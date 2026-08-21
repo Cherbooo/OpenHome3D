@@ -112,6 +112,13 @@ body.sidebar-collapsed .app-canvas {
   text-decoration: none;
 }
 
+/* quiet feedback entry at the bottom of the sidebar */
+.sb-feedback {
+  display: block;
+  margin: 14px 16px 18px;
+  text-align: center;
+}
+
 .sb-logo {
   width: 26px;
   height: 26px;

@@ -1,0 +1,23 @@
+name: 功能建议 Feature idea
+description: 想要什么效果?Suggest an idea
+title: "[Idea] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: 你想要什么 What do you want?
+      description: 一句话说清想要的效果,不用管技术实现。Describe the outcome, not the implementation.
+      placeholder: 例如:希望能把房间导出成图片分享 / 希望有更多儿童房的家具
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 使用场景 Use case
+      description: 你在什么场景下需要它?解决什么问题?
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充 Anything else
+      description: 参考图、同类产品的例子、草图都可以,直接拖图进来。
