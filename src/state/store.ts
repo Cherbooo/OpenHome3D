@@ -382,7 +382,9 @@ export const useStore = create<HGState>()(
             seed: s.seed,
             extras: s.extras,
             home: s.home,
-            furniture: s.furniture,
+            // uploaded GLBs stay out of the project file (their blobs live in
+            // IndexedDB and can't travel), so their instances are filtered out
+            furniture: s.furniture.filter((f) => !f.modelId.startsWith('upload:')),
           },
           null,
           2,
