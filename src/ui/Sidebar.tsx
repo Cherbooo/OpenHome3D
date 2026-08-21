@@ -1,4 +1,4 @@
-import { type CSSProperties } from 'react'
+import { type CSSProperties, useRef } from 'react'
 import { useStore } from '../state/store'
 import { ROOM_TYPES } from '../gen/roomTypes'
 import { sideSpan, type Opening, type RoomDef, type Side } from '../state/home'
@@ -195,10 +195,32 @@ function GitHubIcon() {
 export default function Sidebar() {
   const collapsed = useUI((s) => s.collapsed)
   const openModal = useUI((s) => s.openModal)
+  const pushToast = useUI((s) => s.pushToast)
   const selectedId = useStore((s) => s.selectedId)
 
   const extras = useStore((s) => s.extras)
   const setExtras = useStore((s) => s.setExtras)
+
+  const fileRef = useRef<HTMLInputElement>(null)
+
+  const onExport = () => {
+    const s = useStore.getState()
+    const blob = new Blob([s.exportProject()], { type: 'application/json' })
+    const a = document.createElement('a')
+    a.href = URL.createObjectURL(blob)
+    a.download = `openhome3d-${s.seed.toLowerCase()}.json`
+    a.click()
+    URL.revokeObjectURL(a.href)
+    pushToast('已导出项目文件 Exported project file')
+  }
+
+  const onImportFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    e.target.value = ''
+    if (!file) return
+    const err = useStore.getState().importProject(await file.text())
+    pushToast(err ?? '项目已导入 Project imported')
+  }
 
   return (
     <aside className={`sidebar${collapsed ? ' collapsed' : ''}`}>
@@ -238,6 +260,16 @@ export default function Sidebar() {
             <GhostButton onClick={() => openModal({ kind: 'add' })}>+ 添加家具 Add furniture</GhostButton>
           </div>
         </Section>
+
+        <div className="sb-tools">
+          <button className="link-btn" type="button" onClick={onExport}>
+            导出 Export
+          </button>
+          <button className="link-btn" type="button" onClick={() => fileRef.current?.click()}>
+            导入 Import
+          </button>
+          <input ref={fileRef} type="file" accept="application/json,.json" hidden onChange={onImportFile} />
+        </div>
 
         <a
           className="link-btn sb-feedback"

@@ -113,9 +113,16 @@ body.sidebar-collapsed .app-canvas {
 }
 
 /* quiet feedback entry at the bottom of the sidebar */
+.sb-tools {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 14px 16px 6px;
+}
+
 .sb-feedback {
   display: block;
-  margin: 14px 16px 18px;
+  margin: 0 16px 18px;
   text-align: center;
 }
 

@@ -81,6 +81,8 @@ export interface HGState extends StructureSettings {
   select: (id: string | null) => void
   addUpload: (def: ModelDef) => void
   removeUpload: (id: string) => void
+  exportProject: () => string
+  importProject: (json: string) => string | null // null = ok; bilingual error otherwise
 }
 
 /**
@@ -155,6 +157,9 @@ function reclampInstance(inst: FurnitureInstance, home: HomeDef): FurnitureInsta
 }
 
 const MIN_OPENING_W = 0.3
+
+/** Lightweight project-file schema version (see exportProject/importProject). */
+const PROJECT_FILE_VERSION = 1
 
 /** Clamp an opening's width/offset into its wall span. */
 function clampOpeningToWall(home: HomeDef, o: Opening): Opening {
@@ -366,6 +371,110 @@ export const useStore = create<HGState>()(
       },
 
       setStructure: (partial) => set(partial),
+
+      // Lightweight JSON project file (idea from discussion #6): room,
+      // openings and registry furniture only — uploaded GLBs stay out of scope.
+      exportProject: () => {
+        const s = get()
+        return JSON.stringify(
+          {
+            version: PROJECT_FILE_VERSION,
+            seed: s.seed,
+            extras: s.extras,
+            home: s.home,
+            furniture: s.furniture,
+          },
+          null,
+          2,
+        )
+      },
+
+      importProject: (json) => {
+        let p: any
+        try {
+          p = JSON.parse(json)
+        } catch {
+          return '文件不是有效的 JSON Invalid JSON file'
+        }
+        if (p?.version !== PROJECT_FILE_VERSION)
+          return '项目文件版本不支持 Unsupported project file version'
+        const rooms = p.home?.rooms
+        if (!Array.isArray(rooms) || rooms.length !== 1)
+          return '项目文件需要恰好一个房间 Expected exactly one room'
+        const r = rooms[0]
+        const rect = r?.rect
+        if (!rect || ![rect.x, rect.z, rect.w, rect.d].every((v) => Number.isFinite(v)))
+          return '房间尺寸数据无效 Invalid room rect'
+        const room: RoomDef = {
+          id: typeof r.id === 'string' && r.id ? r.id : uid(),
+          type: getRoomType(r.type) ? r.type : 'living',
+          name:
+            typeof r.name === 'string' && r.name
+              ? r.name
+              : (getRoomType(r.type)?.label ?? '客厅 Living'),
+          rect: {
+            x: round5cm(rect.x),
+            z: round5cm(rect.z),
+            w: clampDim(rect.w),
+            d: clampDim(rect.d),
+          },
+          salt: Number.isFinite(r.salt) ? Math.max(0, Math.round(r.salt)) : 0,
+          partitionHeight: Number.isFinite(r.partitionHeight)
+            ? Math.max(0, round5cm(r.partitionHeight))
+            : 0,
+        }
+        const home: HomeDef = { rooms: [room], openings: [] }
+        for (const o of Array.isArray(p.home?.openings) ? p.home.openings : []) {
+          if (!o || !['door', 'window', 'open'].includes(o.kind)) continue
+          if (!['n', 's', 'e', 'w'].includes(o.side)) continue
+          if (!Number.isFinite(o.offset) || !Number.isFinite(o.width)) continue
+          const next = clampOpeningToWall(home, {
+            id: typeof o.id === 'string' && o.id ? o.id : uid(),
+            kind: o.kind,
+            a: room.id,
+            b: 'exterior',
+            side: o.side,
+            offset: o.offset,
+            width: o.width,
+          })
+          if (validateOpening(home, next)) home.openings.push(next)
+        }
+        const furniture: FurnitureInstance[] = []
+        for (const f of Array.isArray(p.furniture) ? p.furniture : []) {
+          const def = f && getModel(f.modelId)
+          if (!def) continue
+          const inst: FurnitureInstance = {
+            id: typeof f.id === 'string' && f.id ? f.id : uid(),
+            roomId: room.id,
+            modelId: def.id,
+            label: def.name,
+            position: [
+              Number.isFinite(f.position?.[0]) ? f.position[0] : 0,
+              Number.isFinite(f.position?.[1]) ? f.position[1] : 0,
+            ],
+            rotationY: Number.isFinite(f.rotationY) ? f.rotationY : 0,
+            params: { ...defaultParams(def), ...(f.params ?? {}) },
+            scale: clamp(Number.isFinite(f.scale) ? f.scale : 1, 0.1, 2),
+          }
+          inst.position = clampedPosition(
+            inst,
+            inst.position[0],
+            inst.position[1],
+            room.rect.w,
+            room.rect.d,
+          )
+          furniture.push(inst)
+        }
+        set({
+          seed: typeof p.seed === 'string' && p.seed.trim() ? p.seed.trim().toUpperCase() : randomSeed(),
+          extras: Number.isFinite(p.extras) ? Math.max(0, Math.min(100, Math.round(p.extras))) : 50,
+          home,
+          furniture,
+          selectedId: null,
+        })
+        return null
+      },
+
       setExtras: (n) => {
         const extras = Math.max(0, Math.min(100, Math.round(n)))
         const s = get()
